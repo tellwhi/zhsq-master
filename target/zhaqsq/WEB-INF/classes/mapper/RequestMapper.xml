@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.monster.zhaqsq.dao.RequestMapper">
+  <resultMap id="BaseResultMap" type="com.monster.zhaqsq.bean.Request">
+    <id column="requestId" jdbcType="INTEGER" property="requestid" />
+    <result column="notifyType" jdbcType="VARCHAR" property="notifytype" />
+    <result column="deviceId" jdbcType="VARCHAR" property="deviceid" />
+    <result column="gatewayId" jdbcType="VARCHAR" property="gatewayid" />
+    <result column="serviceId" jdbcType="VARCHAR" property="serviceid" />
+    <result column="serviceType" jdbcType="VARCHAR" property="servicetype" />
+    <result column="deviceNumber" jdbcType="VARCHAR" property="devicenumber" />
+    <result column="dimension" jdbcType="VARCHAR" property="dimension" />
+    <result column="NSFlag" jdbcType="CHAR" property="nsflag" />
+    <result column="longitude" jdbcType="VARCHAR" property="longitude" />
+    <result column="WEFlag" jdbcType="CHAR" property="weflag" />
+    <result column="eventTime" jdbcType="VARCHAR" property="eventtime" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    requestId, notifyType, deviceId, gatewayId, serviceId, serviceType, deviceNumber, 
+    dimension, NSFlag, longitude, WEFlag, eventTime
+  </sql>
+  <select id="selectByExample" parameterType="com.monster.zhaqsq.bean.RequestExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from tbl_request
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tbl_request
+    where requestId = #{requestid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tbl_request
+    where requestId = #{requestid,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.monster.zhaqsq.bean.RequestExample">
+    delete from tbl_request
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.monster.zhaqsq.bean.Request">
+    insert into tbl_request (requestId, notifyType, deviceId, 
+      gatewayId, serviceId, serviceType, 
+      deviceNumber, dimension, NSFlag, 
+      longitude, WEFlag, eventTime
+      )
+    values (#{requestid,jdbcType=INTEGER}, #{notifytype,jdbcType=VARCHAR}, #{deviceid,jdbcType=VARCHAR}, 
+      #{gatewayid,jdbcType=VARCHAR}, #{serviceid,jdbcType=VARCHAR}, #{servicetype,jdbcType=VARCHAR}, 
+      #{devicenumber,jdbcType=VARCHAR}, #{dimension,jdbcType=VARCHAR}, #{nsflag,jdbcType=CHAR}, 
+      #{longitude,jdbcType=VARCHAR}, #{weflag,jdbcType=CHAR}, #{eventtime,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.monster.zhaqsq.bean.Request">
+    insert into tbl_request
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="requestid != null">
+        requestId,
+      </if>
+      <if test="notifytype != null">
+        notifyType,
+      </if>
+      <if test="deviceid != null">
+        deviceId,
+      </if>
+      <if test="gatewayid != null">
+        gatewayId,
+      </if>
+      <if test="serviceid != null">
+        serviceId,
+      </if>
+      <if test="servicetype != null">
+        serviceType,
+      </if>
+      <if test="devicenumber != null">
+        deviceNumber,
+      </if>
+      <if test="dimension != null">
+        dimension,
+      </if>
+      <if test="nsflag != null">
+        NSFlag,
+      </if>
+      <if test="longitude != null">
+        longitude,
+      </if>
+      <if test="weflag != null">
+        WEFlag,
+      </if>
+      <if test="eventtime != null">
+        eventTime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="requestid != null">
+        #{requestid,jdbcType=INTEGER},
+      </if>
+      <if test="notifytype != null">
+        #{notifytype,jdbcType=VARCHAR},
+      </if>
+      <if test="deviceid != null">
+        #{deviceid,jdbcType=VARCHAR},
+      </if>
+      <if test="gatewayid != null">
+        #{gatewayid,jdbcType=VARCHAR},
+      </if>
+      <if test="serviceid != null">
+        #{serviceid,jdbcType=VARCHAR},
+      </if>
+      <if test="servicetype != null">
+        #{servicetype,jdbcType=VARCHAR},
+      </if>
+      <if test="devicenumber != null">
+        #{devicenumber,jdbcType=VARCHAR},
+      </if>
+      <if test="dimension != null">
+        #{dimension,jdbcType=VARCHAR},
+      </if>
+      <if test="nsflag != null">
+        #{nsflag,jdbcType=CHAR},
+      </if>
+      <if test="longitude != null">
+        #{longitude,jdbcType=VARCHAR},
+      </if>
+      <if test="weflag != null">
+        #{weflag,jdbcType=CHAR},
+      </if>
+      <if test="eventtime != null">
+        #{eventtime,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.monster.zhaqsq.bean.RequestExample" resultType="java.lang.Long">
+    select count(*) from tbl_request
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update tbl_request
+    <set>
+      <if test="record.requestid != null">
+        requestId = #{record.requestid,jdbcType=INTEGER},
+      </if>
+      <if test="record.notifytype != null">
+        notifyType = #{record.notifytype,jdbcType=VARCHAR},
+      </if>
+      <if test="record.deviceid != null">
+        deviceId = #{record.deviceid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.gatewayid != null">
+        gatewayId = #{record.gatewayid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.serviceid != null">
+        serviceId = #{record.serviceid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.servicetype != null">
+        serviceType = #{record.servicetype,jdbcType=VARCHAR},
+      </if>
+      <if test="record.devicenumber != null">
+        deviceNumber = #{record.devicenumber,jdbcType=VARCHAR},
+      </if>
+      <if test="record.dimension != null">
+        dimension = #{record.dimension,jdbcType=VARCHAR},
+      </if>
+      <if test="record.nsflag != null">
+        NSFlag = #{record.nsflag,jdbcType=CHAR},
+      </if>
+      <if test="record.longitude != null">
+        longitude = #{record.longitude,jdbcType=VARCHAR},
+      </if>
+      <if test="record.weflag != null">
+        WEFlag = #{record.weflag,jdbcType=CHAR},
+      </if>
+      <if test="record.eventtime != null">
+        eventTime = #{record.eventtime,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update tbl_request
+    set requestId = #{record.requestid,jdbcType=INTEGER},
+      notifyType = #{record.notifytype,jdbcType=VARCHAR},
+      deviceId = #{record.deviceid,jdbcType=VARCHAR},
+      gatewayId = #{record.gatewayid,jdbcType=VARCHAR},
+      serviceId = #{record.serviceid,jdbcType=VARCHAR},
+      serviceType = #{record.servicetype,jdbcType=VARCHAR},
+      deviceNumber = #{record.devicenumber,jdbcType=VARCHAR},
+      dimension = #{record.dimension,jdbcType=VARCHAR},
+      NSFlag = #{record.nsflag,jdbcType=CHAR},
+      longitude = #{record.longitude,jdbcType=VARCHAR},
+      WEFlag = #{record.weflag,jdbcType=CHAR},
+      eventTime = #{record.eventtime,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.monster.zhaqsq.bean.Request">
+    update tbl_request
+    <set>
+      <if test="notifytype != null">
+        notifyType = #{notifytype,jdbcType=VARCHAR},
+      </if>
+      <if test="deviceid != null">
+        deviceId = #{deviceid,jdbcType=VARCHAR},
+      </if>
+      <if test="gatewayid != null">
+        gatewayId = #{gatewayid,jdbcType=VARCHAR},
+      </if>
+      <if test="serviceid != null">
+        serviceId = #{serviceid,jdbcType=VARCHAR},
+      </if>
+      <if test="servicetype != null">
+        serviceType = #{servicetype,jdbcType=VARCHAR},
+      </if>
+      <if test="devicenumber != null">
+        deviceNumber = #{devicenumber,jdbcType=VARCHAR},
+      </if>
+      <if test="dimension != null">
+        dimension = #{dimension,jdbcType=VARCHAR},
+      </if>
+      <if test="nsflag != null">
+        NSFlag = #{nsflag,jdbcType=CHAR},
+      </if>
+      <if test="longitude != null">
+        longitude = #{longitude,jdbcType=VARCHAR},
+      </if>
+      <if test="weflag != null">
+        WEFlag = #{weflag,jdbcType=CHAR},
+      </if>
+      <if test="eventtime != null">
+        eventTime = #{eventtime,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where requestId = #{requestid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.monster.zhaqsq.bean.Request">
+    update tbl_request
+    set notifyType = #{notifytype,jdbcType=VARCHAR},
+      deviceId = #{deviceid,jdbcType=VARCHAR},
+      gatewayId = #{gatewayid,jdbcType=VARCHAR},
+      serviceId = #{serviceid,jdbcType=VARCHAR},
+      serviceType = #{servicetype,jdbcType=VARCHAR},
+      deviceNumber = #{devicenumber,jdbcType=VARCHAR},
+      dimension = #{dimension,jdbcType=VARCHAR},
+      NSFlag = #{nsflag,jdbcType=CHAR},
+      longitude = #{longitude,jdbcType=VARCHAR},
+      WEFlag = #{weflag,jdbcType=CHAR},
+      eventTime = #{eventtime,jdbcType=VARCHAR}
+    where requestId = #{requestid,jdbcType=INTEGER}
+  </update>
+</mapper>

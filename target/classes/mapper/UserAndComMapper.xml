@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.monster.zhaqsq.dao.UserAndComMapper">
+  <resultMap id="BaseResultMap" type="com.monster.zhaqsq.bean.UserAndCom">
+    <id column="unc_id" jdbcType="INTEGER" property="uncId" />
+    <result column="u_id" jdbcType="INTEGER" property="uId" />
+    <result column="c_id" jdbcType="INTEGER" property="cId" />
+  </resultMap>
+  
+  <resultMap id="ComResultMap" type="com.monster.zhaqsq.bean.UserAndCom">
+    <result column="c_id" jdbcType="INTEGER" property="cId" />
+    <association property="communityBasic" javaType="com.monster.zhaqsq.bean.CommunityBasic">
+      <id column="com_id" property="comId" />
+    <result column="com_title" property="comTitle" />
+    <result column="com_category" property="comCategory" />
+    <result column="com_number" property="comNumber" />
+    <result column="com_desp" property="comDesp" />
+    <result column="com_address" property="comAddress" />
+    </association>
+  </resultMap>
+  <resultMap id="UserResultMap" type="com.monster.zhaqsq.bean.UserAndCom">
+    <result column="u_id" jdbcType="INTEGER" property="uId" />
+    <association property="userBasic" javaType="com.monster.zhaqsq.bean.UserBasic">
+      <id column="uid" property="uid" />
+    <result column="user_name" property="userName" />
+    <result column="user_password" property="userPassword" />
+    <result column="user_phonenumber" property="userPhonenumber" />
+    <result column="user_dept" property="userDept" />
+    <result column="user_sex" property="userSex" />
+    <result column="user_desp" property="userDesp" />
+    <result column="user_namecheck" property="userNamecheck" />
+    <result column="user_creditlevel" property="userCreditlevel" />
+    <result column="user_messagelevel" property="userMessagelevel" />
+    <result column="user_point" property="userPoint" />
+    </association>
+  </resultMap>
+  
+  
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    unc_id, u_id, c_id
+  </sql>
+  <sql id="Com_Column_List">
+    w.c_id, c.com_id, c.com_title, c.com_category, c.com_number, c.com_desp, c.com_address
+  </sql>
+  <sql id="User_Column_List">
+    w.u_id, u.uid, u.user_name, u.user_password, u.user_phonenumber, u.user_dept, u.user_sex, u.user_desp, 
+    u.user_namecheck, u.user_creditlevel, u.user_messagelevel, u.user_point
+  </sql>
+  
+  
+  <select id="selectByExample" parameterType="com.monster.zhaqsq.bean.UserAndComExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from tbl_userandcom
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tbl_userandcom
+    where unc_id = #{uncId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tbl_userandcom
+    where unc_id = #{uncId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.monster.zhaqsq.bean.UserAndComExample">
+    delete from tbl_userandcom
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.monster.zhaqsq.bean.UserAndCom">
+    insert into tbl_userandcom (unc_id, u_id, c_id
+      )
+    values (#{uncId,jdbcType=INTEGER}, #{uId,jdbcType=INTEGER}, #{cId,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.monster.zhaqsq.bean.UserAndCom">
+    insert into tbl_userandcom
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="uncId != null">
+        unc_id,
+      </if>
+      <if test="uId != null">
+        u_id,
+      </if>
+      <if test="cId != null">
+        c_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="uncId != null">
+        #{uncId,jdbcType=INTEGER},
+      </if>
+      <if test="uId != null">
+        #{uId,jdbcType=INTEGER},
+      </if>
+      <if test="cId != null">
+        #{cId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  
+  <!-- 根据uid删除 -->
+  <delete id="deleteByUId">
+    delete from tbl_userandcom
+    where u_id = #{uId,jdbcType=INTEGER}
+  </delete>
+  
+  <!-- 根据comid删除 -->
+  <delete id="deleteByCId">
+    delete from tbl_userandcom
+    where c_id = #{cId,jdbcType=INTEGER}
+  </delete>
+  
+
+
+  <!-- 根据uid查询comid -->
+  <select id="selectWithUId" resultMap="ComResultMap"  resultType="java.lang.String">
+  	SELECT 
+  	<include refid="Com_Column_List" />
+  	FROM tbl_userandcom w
+  	left join tbl_communitybasic c on w.`c_id`=c.`com_id`
+  	WHERE u_id = #{uId,jdbcType=INTEGER}
+  </select>
+  
+  <!-- 根据comid查询uid -->
+  <select id="selectWithCId" resultMap="UserResultMap"  resultType="java.lang.String">
+  	SELECT 
+  	<include refid="User_Column_List" />
+  	FROM tbl_userandcom w
+  	left join tbl_userbasic u on w.`u_id`=u.`uid`
+  	WHERE c_id = #{cId,jdbcType=INTEGER}
+  </select>
+  
+  
+  <select id="countByExample" parameterType="com.monster.zhaqsq.bean.UserAndComExample" resultType="java.lang.Long">
+    select count(*) from tbl_userandcom
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update tbl_userandcom
+    <set>
+      <if test="record.uncId != null">
+        unc_id = #{record.uncId,jdbcType=INTEGER},
+      </if>
+      <if test="record.uId != null">
+        u_id = #{record.uId,jdbcType=INTEGER},
+      </if>
+      <if test="record.cId != null">
+        c_id = #{record.cId,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update tbl_userandcom
+    set unc_id = #{record.uncId,jdbcType=INTEGER},
+      u_id = #{record.uId,jdbcType=INTEGER},
+      c_id = #{record.cId,jdbcType=INTEGER}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.monster.zhaqsq.bean.UserAndCom">
+    update tbl_userandcom
+    <set>
+      <if test="uId != null">
+        u_id = #{uId,jdbcType=INTEGER},
+      </if>
+      <if test="cId != null">
+        c_id = #{cId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where unc_id = #{uncId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.monster.zhaqsq.bean.UserAndCom">
+    update tbl_userandcom
+    set u_id = #{uId,jdbcType=INTEGER},
+      c_id = #{cId,jdbcType=INTEGER}
+    where unc_id = #{uncId,jdbcType=INTEGER}
+  </update>
+</mapper>

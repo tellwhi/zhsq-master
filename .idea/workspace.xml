@@ -1,0 +1,1052 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="zhaqsq:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1d2bab44-494d-4290-be28-983e9b495c58" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ZHAQSQ_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ZHAQSQ_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZHAQSQ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/zhaqsq.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/bean/CommunityBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/bean/CommunityBasic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/bean/CommunityBasicExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/bean/CommunityBasicExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/controller/CallListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/controller/CallListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/controller/CommunityBasicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/controller/CommunityBasicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/controller/UserBasicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/controller/UserBasicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/dao/CommunityBasicMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/dao/CommunityBasicMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/dao/UserBasicMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/dao/UserBasicMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/service/CommunityBasicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/service/CommunityBasicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/service/UserBasicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/service/UserBasicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CommunityBasicMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CommunityBasicMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserBasicMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserBasicMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZHAQSQ.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZHAQSQ/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZHAQSQ/WEB-INF/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZHAQSQ/WEB-INF/classes/com/monster/zhaqsq/controller/CommunityBasicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZHAQSQ/WEB-INF/classes/com/monster/zhaqsq/controller/CommunityBasicController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZHAQSQ/WEB-INF/classes/com/monster/zhaqsq/controller/UserBasicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZHAQSQ/WEB-INF/classes/com/monster/zhaqsq/controller/UserBasicController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZHAQSQ/WEB-INF/classes/com/monster/zhaqsq/dao/UserBasicMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZHAQSQ/WEB-INF/classes/com/monster/zhaqsq/dao/UserBasicMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZHAQSQ/WEB-INF/classes/com/monster/zhaqsq/service/UserBasicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZHAQSQ/WEB-INF/classes/com/monster/zhaqsq/service/UserBasicService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZHAQSQ/WEB-INF/classes/dbconfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZHAQSQ/WEB-INF/classes/dbconfig.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZHAQSQ/WEB-INF/classes/mapper/CallListMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZHAQSQ/WEB-INF/classes/mapper/CallListMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZHAQSQ/WEB-INF/classes/mapper/CommunityBasicMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZHAQSQ/WEB-INF/classes/mapper/CommunityBasicMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZHAQSQ/WEB-INF/classes/mapper/UserAddressMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZHAQSQ/WEB-INF/classes/mapper/UserAddressMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZHAQSQ/WEB-INF/classes/mapper/UserBasicMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZHAQSQ/WEB-INF/classes/mapper/UserBasicMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ZHAQSQ/WEB-INF/classes/mybaits-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ZHAQSQ/WEB-INF/classes/mybaits-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/controller/CommunityBasicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/controller/CommunityBasicController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/controller/UserBasicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/controller/UserBasicController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/dao/UserBasicMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/dao/UserBasicMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/service/UserBasicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/service/UserBasicService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dbconfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dbconfig.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CallListMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/CallListMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CommunityBasicMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/CommunityBasicMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserAddressMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserAddressMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserBasicMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserBasicMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybaits-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybaits-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/com.monster/ZHAQSQ/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/com.monster/ZHAQSQ/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-263620184">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="7" />
+          <entry key="properties" value="1" />
+          <entry key="xml" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="7" />
+          <entry key="Properties" value="1" />
+          <entry key="XML" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="jsp" value="38" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JSP" value="38" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="371782180">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.opened" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="52" />
+          <entry key="jsp" value="1" />
+          <entry key="xml" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="52" />
+          <entry key="JSP" value="1" />
+          <entry key="XML" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1574" />
+          <entry key="jsp" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1574" />
+          <entry key="JSP" value="5" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/controller/CallListController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="72" column="34" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserAndComMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2679" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/bean/UserAndCom.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/controller/UserAndComController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>insert</find>
+      <find>jstl</find>
+      <find>TIME</find>
+      <find>ele</find>
+      <find>dept</find>
+      <find>框</find>
+      <find>编辑</find>
+      <find>emp</find>
+      <find>edit_btn</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/monster/test/asd.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/dbconfig.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybaits-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/bean/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/bean/UserExample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/user.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/login.java" />
+        <option value="$PROJECT_DIR$/mbg.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/privateWatch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/MBGTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserBasicMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/dao/UserBasicMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/bean/Msg.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/calculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/MvcTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/service/CallListService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/CallListMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/bean/UserBasic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/bean/UserBasicLogin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/service/UserBasicService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/controller/UserBasicController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/MapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/service/CommunityBasicService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/controller/CallListController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/controller/CommunityBasicController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="950" />
+    <option name="width" value="979" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="zhaqsq-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhaqsq-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhaqsq-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhaqsq-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhaqsq-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhaqsq-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhaqsq-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhaqsq-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhaqsq-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhaqsq-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zhaqsq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhaqsq-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhaqsq-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zhaqsq" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhaqsq-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhaqsq-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zhaqsq" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhaqsq-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhaqsq-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zhaqsq" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhaqsq-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhaqsq-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhaqsq-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhaqsq-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhaqsq-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhaqsq-master" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555736592414" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\峯\IdeaProjects\zhaqsq-master\src\main\resources\mapper" />
+      <recent name="C:\Users\峯\IdeaProjects\zhaqsq-master\src\main\java\com\monster\zhaqsq\service" />
+      <recent name="C:\Users\峯\IdeaProjects\zhaqsq-master\src\main\java\com\monster\zhaqsq\dao" />
+      <recent name="C:\Users\峯\IdeaProjects\zhaqsq-master\src\main\java\com\monster\zhaqsq\bean" />
+      <recent name="D:\java\ZHAQSQ" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.mytomcat">
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.monster.zhaqsq.test.calculator" />
+      <module name="zhaqsq" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.monster.zhaqsq.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapperTest.calinsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="zhaqsq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.monster.zhaqsq.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.monster.zhaqsq.test" />
+      <option name="MAIN_CLASS_NAME" value="com.monster.zhaqsq.test.MapperTest" />
+      <option name="METHOD_NAME" value="calinsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MvcTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="zhaqsq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.monster.zhaqsq.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.monster.zhaqsq.test" />
+      <option name="MAIN_CLASS_NAME" value="com.monster.zhaqsq.test.MvcTest" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mytomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.90" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="zhaqsq:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="未命名_zhaqsq-master_3" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="57298" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="zhaqsq:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.mytomcat" />
+      <item itemvalue="Application.calculator" />
+      <item itemvalue="JUnit.MvcTest" />
+      <item itemvalue="JUnit.MapperTest.calinsert" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MapperTest.calinsert" />
+        <item itemvalue="JUnit.MvcTest" />
+        <item itemvalue="Application.calculator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1d2bab44-494d-4290-be28-983e9b495c58" name="Default" comment="" />
+      <created>1543137657882</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543137657882</updated>
+      <workItem from="1543137662180" duration="525000" />
+      <workItem from="1543138241889" duration="5560000" />
+      <workItem from="1543158858794" duration="2000" />
+      <workItem from="1543344872585" duration="2607000" />
+      <workItem from="1543484726458" duration="704000" />
+      <workItem from="1543602441374" duration="2365000" />
+      <workItem from="1543657995440" duration="3143000" />
+      <workItem from="1543763644941" duration="1945000" />
+      <workItem from="1543777248779" duration="102000" />
+      <workItem from="1543942103539" duration="1224000" />
+      <workItem from="1544191362975" duration="4931000" />
+      <workItem from="1544257317652" duration="1272000" />
+      <workItem from="1544632026866" duration="243000" />
+      <workItem from="1544647440917" duration="5382000" />
+      <workItem from="1544701796121" duration="369000" />
+      <workItem from="1544705221233" duration="599000" />
+      <workItem from="1544788280919" duration="2929000" />
+      <workItem from="1544886109974" duration="1224000" />
+      <workItem from="1544888176813" duration="688000" />
+      <workItem from="1544896196024" duration="3848000" />
+      <workItem from="1545151634967" duration="1381000" />
+      <workItem from="1545492473244" duration="3870000" />
+      <workItem from="1545544409404" duration="4161000" />
+      <workItem from="1545704913723" duration="1020000" />
+      <workItem from="1545746506702" duration="136000" />
+      <workItem from="1545746886941" duration="8355000" />
+      <workItem from="1545815477557" duration="5989000" />
+      <workItem from="1551786226778" duration="5339000" />
+      <workItem from="1554646399438" duration="809000" />
+      <workItem from="1554648123227" duration="2561000" />
+      <workItem from="1555736208614" duration="219000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="MapperTest_calinsert - 2018.12.23 at 13h 56m 59s.xml">
+      <configuration name="MapperTest.calinsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapperTest_calinsert - 2018.12.23 at 14h 01m 13s.xml">
+      <configuration name="MapperTest.calinsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapperTest_select - 2018.12.08 at 16h 48m 17s.xml">
+      <configuration name="MapperTest.select" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapperTest_select - 2018.12.14 at 19h 55m 32s.xml">
+      <configuration name="MapperTest.select" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapperTest_select - 2018.12.15 at 23h 06m 38s.xml">
+      <configuration name="MapperTest.select" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapperTest_update - 2018.12.08 at 16h 48m 01s.xml">
+      <configuration name="MapperTest.update" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapperTest_update - 2018.12.14 at 19h 54m 59s.xml">
+      <configuration name="MapperTest.update" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapperTest_update - 2018.12.15 at 23h 06m 10s.xml">
+      <configuration name="MapperTest.update" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MvcTest - 2018.12.16 at 02h 27m 27s.xml">
+      <configuration name="MvcTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MvcTest - 2018.12.16 at 02h 28m 26s.xml">
+      <configuration name="MvcTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="73665000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24329759" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="设计器" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4953083" visible="true" weight="0.32765958" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50469166" side_tool="true" weight="0.32765958" />
+      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.49791667" weight="0.32765958" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Application Servers" order="11" weight="0.32983193" />
+      <window_info anchor="bottom" id="Spring" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="调试" order="15" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="调色板" order="10" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/bean/Department.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/bean/UserExample.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/bean/User.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/user.java" />
+    <entry file="file://$PROJECT_DIR$/mbg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="32" column="62" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/login.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/dao/UserAdressMapper.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserAdressMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/bean/UserBasicExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/privateWatch.java" />
+    <entry file="file://$PROJECT_DIR$/target/classes/mapper/CallListMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="70" lean-forward="true" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/service/UserAdressService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserBasicMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="311" column="49" selection-start-line="311" selection-start-column="49" selection-end-line="311" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/bean/UserAdress.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/bean/UserAdressExample.java" />
+    <entry file="file://$PROJECT_DIR$/target/classes/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="56" lean-forward="true" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dbconfig.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="55" selection-start-column="55" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybaits-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserAddressMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/MBGTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="338" selection-start-line="338" selection-end-line="338" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-52">
+          <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/bean/CallList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/service/UserAddressService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/bean/UserBasicLogin.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/MvcTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/bean/Msg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CommunityBasicMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/MapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="166" column="16" lean-forward="true" selection-start-line="166" selection-start-column="16" selection-end-line="166" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/bean/CommunityBasicExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3287">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/dao/UserBasicMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/dao/CallListMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/service/UserBasicService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-152">
+          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/service/CallListService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1197">
+          <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/bean/CommunityBasic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-409">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/dao/CommunityBasicMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/bean/UserBasic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="94" selection-start-line="14" selection-start-column="79" selection-end-line="14" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/service/CommunityBasicService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="55" column="41" lean-forward="true" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/controller/UserBasicController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="63" column="7" lean-forward="true" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CallListMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="207" column="23" selection-start-line="207" selection-start-column="23" selection-end-line="207" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/controller/CommunityBasicController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="65" column="76" selection-start-line="65" selection-start-column="76" selection-end-line="65" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2090">
+          <caret line="110" column="34" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="125" column="48" selection-start-line="125" selection-start-column="48" selection-end-line="125" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserAndComMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2679" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/service/UserAndComService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/bean/UserAndCom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/controller/CallListController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="72" column="34" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/controller/UserAndComController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="56" column="34" lean-forward="true" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor>
+            <show-content>
+              <type id="jpa-descriptors" />
+              <type id="artifact" />
+              <type id="library" />
+              <type id="javaee-facet-resources" />
+            </show-content>
+          </artifact-editor>
+          <last-edited>zhaqsq:war2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>zhaqsq</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
