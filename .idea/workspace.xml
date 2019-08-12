@@ -7,90 +7,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d2bab44-494d-4290-be28-983e9b495c58" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/CallList.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/CallList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/CallListExample$Criteria.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/CallListExample$Criteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/CallListExample$Criterion.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/CallListExample$Criterion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/CallListExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/CallListExample$GeneratedCriteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/CallListExample.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/CallListExample.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/CommunityBasic.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/CommunityBasic.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/CommunityBasicExample$Criteria.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/CommunityBasicExample$Criteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/CommunityBasicExample$Criterion.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/CommunityBasicExample$Criterion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/CommunityBasicExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/CommunityBasicExample$GeneratedCriteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/CommunityBasicExample.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/CommunityBasicExample.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/Content.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/Content.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/Data.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/Data.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/Msg.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/Msg.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/Request.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/Request.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/RequestExample$Criteria.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/RequestExample$Criteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/RequestExample$Criterion.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/RequestExample$Criterion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/RequestExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/RequestExample$GeneratedCriteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/RequestExample.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/RequestExample.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/Services.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/Services.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserAddress.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserAddress.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserAddressExample$Criteria.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserAddressExample$Criteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserAddressExample$Criterion.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserAddressExample$Criterion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserAddressExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserAddressExample$GeneratedCriteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserAddressExample.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserAddressExample.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserAndCom.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserAndCom.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserAndComExample$Criteria.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserAndComExample$Criteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserAndComExample$Criterion.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserAndComExample$Criterion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserAndComExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserAndComExample$GeneratedCriteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserAndComExample.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserAndComExample.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserBasic.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserBasic.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserBasicExample$Criteria.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserBasicExample$Criteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserBasicExample$Criterion.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserBasicExample$Criterion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserBasicExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserBasicExample$GeneratedCriteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserBasicExample.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/bean/UserBasicExample.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/controller/CallListController.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/controller/CallListController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/controller/CommunityBasicController.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/controller/CommunityBasicController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/controller/RequestController.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/controller/RequestController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/controller/UserAndComController.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/controller/UserAndComController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/controller/UserBasicController.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/controller/UserBasicController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/dao/CallListMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/dao/CallListMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/dao/CommunityBasicMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/dao/CommunityBasicMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/dao/RequestMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/dao/RequestMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/dao/UserAddressMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/dao/UserAddressMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/dao/UserAndComMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/dao/UserAndComMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/dao/UserBasicMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/dao/UserBasicMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/service/CallListService.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/service/CallListService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/service/CommunityBasicService.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/service/CommunityBasicService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/service/RequestService.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/service/RequestService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/service/UserAddressService.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/service/UserAddressService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/service/UserAndComService.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/service/UserAndComService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/service/UserBasicService.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/service/UserBasicService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/test/MBGTest.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/test/MBGTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/test/MapperTest.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/test/MapperTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/test/MvcTest.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/test/MvcTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/test/calculator.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/test/calculator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/utils/MD5_Encoding.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/utils/MD5_Encoding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/CallList.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/CallList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/CallListExample$Criterion.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/CallListExample$Criterion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/CallListExample.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/CallListExample.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/CommunityBasic.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/CommunityBasic.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/CommunityBasicExample$Criterion.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/CommunityBasicExample$Criterion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/CommunityBasicExample.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/CommunityBasicExample.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/Request.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/Request.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/RequestExample$Criterion.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/RequestExample$Criterion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/RequestExample.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/RequestExample.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/UserAddress.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/UserAddress.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/UserAddressExample$Criterion.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/UserAddressExample$Criterion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/UserAddressExample.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/UserAddressExample.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/UserAndComExample$Criterion.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/UserAndComExample$Criterion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/UserAndComExample.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/UserAndComExample.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/UserBasic.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/UserBasic.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/UserBasicExample$Criterion.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/UserBasicExample$Criterion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/UserBasicExample.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/bean/UserBasicExample.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/controller/CallListController.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/controller/CallListController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/controller/CommunityBasicController.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/controller/CommunityBasicController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/controller/RequestController.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/controller/RequestController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/controller/UserBasicController.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/controller/UserBasicController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/test/MvcTest.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/test/MvcTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/utils/MD5_Encoding.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/utils/MD5_Encoding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/zhaqsq_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/zhaqsq_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/utils/base64.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/utils/base64.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/utils/base64.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.classpath" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.project" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/test/cookieTest.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/test/cookieTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/test/encryptTest.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/test/encryptTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/utils/cookieUtils.class" afterPath="$PROJECT_DIR$/target/classes/com/monster/zhaqsq/utils/cookieUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/test/cookieTest.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/test/cookieTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/test/encryptTest.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/test/encryptTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/utils/cookieUtils.class" afterPath="$PROJECT_DIR$/target/zhaqsq/WEB-INF/classes/com/monster/zhaqsq/utils/cookieUtils.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/zhaqsq/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/zhaqsq/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zhaqsq.iml" afterPath="$PROJECT_DIR$/zhaqsq.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/cookieTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/cookieTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/encryptTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/encryptTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/utils/cookieUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/utils/cookieUtils.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -193,8 +124,8 @@
       <file leaf-file-name="encryptUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/utils/encryptUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="38" column="60" lean-forward="false" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="60" />
+            <state relative-caret-position="368">
+              <caret line="45" column="108" lean-forward="false" selection-start-line="45" selection-start-column="88" selection-end-line="45" selection-end-column="108" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -205,8 +136,8 @@
       <file leaf-file-name="encryptTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/encryptTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="48" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="48" />
+            <state relative-caret-position="361">
+              <caret line="19" column="48" lean-forward="true" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -214,11 +145,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="base64.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/utils/base64.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-297">
+              <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="cookieUtils.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/utils/cookieUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="69" column="20" lean-forward="true" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
+            <state relative-caret-position="212">
+              <caret line="67" column="7" lean-forward="true" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -229,8 +170,8 @@
       <file leaf-file-name="cookieTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/cookieTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+            <state relative-caret-position="79">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -259,7 +200,12 @@
       <find>emp</find>
       <find>edit_btn</find>
       <find>md5</find>
+      <find>public static final String CIPHER_ALGORITHM</find>
+      <find>DES/</find>
     </findStrings>
+    <dirStrings>
+      <dir>D:\program files\jdk9.0.1!\java.base\javax\crypto\interfaces</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -304,9 +250,10 @@
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/utils/encryptUtils.java" />
         <option value="$PROJECT_DIR$/src/main/resources/key.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/cookieTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/utils/base64.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/encryptTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/utils/cookieUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/cookieTest.java" />
       </list>
     </option>
   </component>
@@ -353,6 +300,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -373,82 +322,25 @@
             </path>
             <path>
               <item name="zhsq-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zhsq-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
               <item name="zhsq-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zhsq-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zhaqsq" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zhsq-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zhsq-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zhaqsq" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zhsq-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zhsq-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zhaqsq" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zhsq-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zhsq-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zhaqsq" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zhsq-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zhsq-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zhsq-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zhsq-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zhsq-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zhsq-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 9.0 &gt;" type="70bed36:NamedLibraryElementNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555736592414" />
-    <property name="last_opened_file_path" value="E:/chrome下载/1.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -810,6 +702,7 @@
       <workItem from="1565339629776" duration="2631000" />
       <workItem from="1565424794290" duration="1355000" />
       <workItem from="1565504559245" duration="17501000" />
+      <workItem from="1565587699245" duration="3405000" />
     </task>
     <servers />
   </component>
@@ -846,11 +739,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95152000" />
+    <option name="totallyTimeSpent" value="98557000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -870,12 +762,13 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43164694" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43164694" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20895523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21108742" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -883,7 +776,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -897,23 +789,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mbg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="32" column="62" lean-forward="false" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/login.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/dao/UserAdressMapper.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserAdressMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/bean/UserBasicExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/privateWatch.java" />
     <entry file="file://$PROJECT_DIR$/target/classes/mapper/CallListMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1091,7 +966,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1158,21 +1032,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/key.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/key.properties" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/bean/CallList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-342">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1180,7 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1188,7 +1051,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="55" lean-forward="false" selection-start-line="0" selection-start-column="55" selection-end-line="0" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1196,7 +1058,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="451">
           <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1208,30 +1069,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/encryptTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="48" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/controller/CallListController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-418">
           <caret line="47" column="8" lean-forward="true" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jrt://D:/program files/jdk9.0.1!/java.base/javax/crypto/Cipher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="69" column="59" lean-forward="false" selection-start-line="69" selection-start-column="59" selection-end-line="69" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jrt://D:/program files/jdk9.0.1!/java.base/javax/crypto/KeyGenerator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jrt://D:/program files/jdk9.0.1!/java.base/javax/crypto/SecretKey.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jrt://D:/program files/jdk9.0.1!/java.base/javax/crypto/spec/SecretKeySpec.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/utils/base64.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-297">
+          <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/utils/encryptUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="38" column="60" lean-forward="false" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="60" />
+        <state relative-caret-position="368">
+          <caret line="45" column="108" lean-forward="false" selection-start-line="45" selection-start-column="88" selection-end-line="45" selection-end-column="108" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/encryptTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="48" lean-forward="true" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1240,8 +1141,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/test/cookieTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        <state relative-caret-position="79">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1250,8 +1151,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/monster/zhaqsq/utils/cookieUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="69" column="20" lean-forward="true" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
+        <state relative-caret-position="212">
+          <caret line="67" column="7" lean-forward="true" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -14,6 +14,8 @@ import java.util.Date;
  */
 public class cookieUtils {
     static byte[] key = {-22, -14, 74, -23, -29, 94, 103, 47};
+    static String UserId;
+    static String UserType;
 
 
     /**
@@ -21,13 +23,23 @@ public class cookieUtils {
      * @param userid 用户id
      * @param usertype 用户类型
      */
+
     public static void setCookie(String userid, String usertype, HttpServletResponse response) throws Exception{
         Date currentTime = new Date();
         byte[] uid = encryptUtils.encrypt(userid.getBytes(), key);
         byte[] uty = encryptUtils.encrypt(usertype.getBytes(), key);
+
+        try {
+            UserId = base64.encode(uid);
+            UserType = base64.encode(uty);
+        }
+        catch (Exception e) {
+            throw new Exception(e);
+        }
+
         Cookie time = new Cookie("time", currentTime.toString());
-        Cookie userId = new Cookie("userid", uid.toString());
-        Cookie userTpye = new Cookie("usertype", uty.toString());
+        Cookie userId = new Cookie("userid", UserId);
+        Cookie userTpye = new Cookie("usertype", UserType);
         time.setPath("/");
         userId.setPath("/");
         userTpye.setPath("/");
@@ -46,8 +58,8 @@ public class cookieUtils {
         for(Cookie cookie:cookies){
             String name=cookie.getName();
             String value=cookie.getValue();
-            if(name == "userid"){
-                return encryptUtils.decrypt(value.getBytes(), key).toString();
+            if(name.equals("userid")){
+                return new String(encryptUtils.decrypt(base64.decode(value.toCharArray()), key));
             }
         }
         return null;
@@ -63,8 +75,8 @@ public class cookieUtils {
         for(Cookie cookie:cookies){
             String name=cookie.getName();
             String value=cookie.getValue();
-            if(name == "usertype"){
-                return encryptUtils.decrypt(value.getBytes(), key).toString();
+            if(name.equals("usertype")){
+                return new String(encryptUtils.decrypt(base64.decode(value.toCharArray()), key));
             }
         }
         return null;
@@ -80,7 +92,7 @@ public class cookieUtils {
         for(Cookie cookie:cookies){
             String name=cookie.getName();
             String value=cookie.getValue();
-            if(name == "time"){
+            if(name.equals("time")){
                 return value;
             }
         }

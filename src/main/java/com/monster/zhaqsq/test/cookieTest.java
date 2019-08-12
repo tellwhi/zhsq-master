@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -25,9 +24,15 @@ import javax.servlet.http.HttpServletResponse;
 @RequestMapping("/cookie")
 public class cookieTest {
     @ResponseBody
-    @RequestMapping(value = "/test",method = RequestMethod.GET)
+    @RequestMapping(value = "/setCookie",method = RequestMethod.GET)
     public Msg a(HttpServletRequest request, HttpServletResponse response) throws Exception{
         cookieUtils.setCookie("123456","admin",response);
+        return Msg.success();
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "/getCookie",method = RequestMethod.GET)
+    public Msg b(HttpServletRequest request, HttpServletResponse response) throws Exception{
         return Msg.success().add("time",cookieUtils.getTime(request)).add("userid",cookieUtils.getUserId(request)).add("usertype",cookieUtils.getUserType(request));
     }
 }
