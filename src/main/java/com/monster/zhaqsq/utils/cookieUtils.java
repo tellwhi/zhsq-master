@@ -99,4 +99,18 @@ public class cookieUtils {
         return null;
     }
 
+
+
+    public static void clearCookie(HttpServletRequest request,HttpServletResponse response){
+        Cookie[] cookies=request.getCookies();
+
+        for(Cookie cookie: cookies){
+            cookie.setMaxAge(0);
+            cookie.setPath("/");
+            response.addCookie(cookie);
+        }
+
+
+    }
+
 }
