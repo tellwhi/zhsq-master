@@ -109,8 +109,6 @@ public class cookieUtils {
             cookie.setPath("/");
             response.addCookie(cookie);
         }
-
-
     }
 
 }
