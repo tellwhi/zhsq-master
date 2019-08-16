@@ -41,7 +41,7 @@ public class UserBasicController {
 
     /**
      * 获取用户个人信息
-     * @throws Exception 
+     * @throws Exception 1
      */
     @RequestMapping("/all")
     @ResponseBody
