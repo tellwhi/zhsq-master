@@ -3,6 +3,8 @@ package com.monster.zhaqsq.controller;
 import com.monster.zhaqsq.bean.Msg;
 import com.monster.zhaqsq.bean.UserBasic;
 import com.monster.zhaqsq.service.UserBasicService;
+import com.monster.zhaqsq.utils.cookieUtils;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +13,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 @Controller
 @RequestMapping("/user")
@@ -24,19 +29,30 @@ public class UserBasicController {
      */
     @RequestMapping("/info")
     @ResponseBody
-    public Msg getUserPersonalInfo(){
-        List<UserBasic> userpersonalinfo = userbasicService.getinfo();
-        return Msg.success().add("users", userpersonalinfo);
+    public Msg getUserPersonalInfo(HttpServletRequest request, HttpServletResponse response) throws Exception{
+    	if (cookieUtils.getUserType(request).equals("1")) {
+            List<UserBasic> userpersonalinfo = userbasicService.getinfo();
+            return Msg.success().add("users", userpersonalinfo);
+    	}
+    	else {
+			return Msg.fail();
+		}
     }
 
     /**
      * 获取用户个人信息
+     * @throws Exception 
      */
     @RequestMapping("/all")
     @ResponseBody
-    public Msg getUserPersonalAllInfo(){
-        List<UserBasic> userpersonalinfo = userbasicService.getall();
-        return Msg.success().add("users", userpersonalinfo);
+    public Msg getUserPersonalAllInfo(HttpServletRequest request, HttpServletResponse response) throws Exception{
+    	if (cookieUtils.getUserType(request).equals("1")) {
+    		List<UserBasic> userpersonalinfo = userbasicService.getall();
+            return Msg.success().add("users", userpersonalinfo);
+		}
+    	else {
+    		return Msg.fail();
+    	}
     }
     
     /**
@@ -44,31 +60,46 @@ public class UserBasicController {
      */
     @RequestMapping(value = "/get",method = RequestMethod.GET)
     @ResponseBody
-    public Msg getCall(@RequestParam("userName")String userName){
-    	UserBasic userBasic = userbasicService.getWithUserName(userName);
-        return Msg.success().add("user",userBasic);
+    public Msg getCall(@RequestParam("userName")String userName ,
+    		HttpServletRequest request, HttpServletResponse response) throws Exception{
+    	if (cookieUtils.getUserType(request).equals("1")) {
+    		UserBasic userBasic = userbasicService.getWithUserName(userName);
+    		return Msg.success().add("user",userBasic);
+        }
+    	else {
+    		return Msg.fail();
+    	}
     }
     
     /**
      * 保存更新后的数据
+     * @throws Exception 
      */
     @ResponseBody
     @RequestMapping(value = "/{uid}",method = RequestMethod.PUT)
-    public Msg saveUser(UserBasic userbasic){
-        userbasicService.updateInfo(userbasic);
-        return Msg.success();
+    public Msg saveUser(UserBasic userbasic, HttpServletRequest request, HttpServletResponse response) throws Exception{
+    	if (cookieUtils.getUserType(request).equals("1")) {
+            userbasicService.updateInfo(userbasic);
+            return Msg.success();
+		}
+    	else {
+    		return Msg.fail();
+    	}
     }
 
     /**
      * 登录
+     * @throws Exception 
      */
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     @ResponseBody
     public Msg login(@RequestParam("userPhonenumber")String userPhonenumber,
-                     @RequestParam("userPassword")String userPassword){
+                     @RequestParam("userPassword")String userPassword,
+                     HttpServletRequest request, HttpServletResponse response) throws Exception{
         List<UserBasic> userList = userbasicService.getall();
         for (UserBasic user:userList){
             if (user.getUserPhonenumber().equals(userPhonenumber) && user.getUserPassword().equals(userPassword)){
+            	cookieUtils.setCookie(user.getUserName(),user.getUserDept(),response);
                 return Msg.success().add("user",user);
             }
         }

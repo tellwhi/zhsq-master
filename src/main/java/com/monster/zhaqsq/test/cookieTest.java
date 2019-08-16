@@ -26,7 +26,7 @@ public class cookieTest {
     @ResponseBody
     @RequestMapping(value = "/setCookie",method = RequestMethod.GET)
     public Msg a(HttpServletRequest request, HttpServletResponse response) throws Exception{
-        cookieUtils.setCookie("123456","admin",response);
+        cookieUtils.setCookie("123456","1",response);
         return Msg.success();
     }
 
@@ -35,4 +35,12 @@ public class cookieTest {
     public Msg b(HttpServletRequest request, HttpServletResponse response) throws Exception{
         return Msg.success().add("time",cookieUtils.getTime(request)).add("userid",cookieUtils.getUserId(request)).add("usertype",cookieUtils.getUserType(request));
     }
+    
+    @ResponseBody
+    @RequestMapping(value = "/clearCookie",method = RequestMethod.GET)
+    public Msg c(HttpServletRequest request, HttpServletResponse response) throws Exception{
+    	cookieUtils.clearCookie(request, response);
+    	return Msg.success();
+    }
+    
 }
