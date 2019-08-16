@@ -43,13 +43,13 @@ public class cookieUtils {
 
         Cookie time = new Cookie("time", currentTime.toString());
         Cookie userId = new Cookie("userid", UserId);
-        Cookie userTpye = new Cookie("usertype", UserType);
+        Cookie userType = new Cookie("usertype", UserType);
         time.setPath("/");
         userId.setPath("/");
-        userTpye.setPath("/");
+        userType.setPath("/");
         response.addCookie(time);
         response.addCookie(userId);
-        response.addCookie(userTpye);
+        response.addCookie(userType);
     }
 
     /**
