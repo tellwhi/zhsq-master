@@ -7,6 +7,7 @@ import com.monster.zhaqsq.utils.cookieUtils;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -24,13 +25,39 @@ public class UserBasicController {
     @Autowired
     UserBasicService userbasicService;
 
+    @ModelAttribute
+    public boolean userTypeJudge(HttpServletRequest request, HttpServletResponse response) throws Exception{
+        if(cookieUtils.getUserType(request).equals("1")){
+        	if(cookieUtils.userLoginTimeStatus(request)) {
+        		return true;
+        	}
+        	else {
+        		cookieUtils.clearCookie(request, response);
+        		return false;
+        	}
+        }
+        else if(cookieUtils.getUserType(request).equals("2")){
+        	if(cookieUtils.adminLoginTimeStatus(request)) {
+        		return true;
+        	}
+        	else {
+        		cookieUtils.clearCookie(request, response);
+        		return false;
+        	}
+        }
+        else {
+    		return false;
+		}
+    }
+    
+    
     /**
      * 获取用户个人信息
      */
     @RequestMapping("/info")
     @ResponseBody
-    public Msg getUserPersonalInfo(HttpServletRequest request, HttpServletResponse response) throws Exception{
-    	if (cookieUtils.getUserType(request).equals("1")) {
+    public Msg getUserPersonalInfo(@ModelAttribute("boolean")boolean judge){
+    	if (judge) {
             List<UserBasic> userpersonalinfo = userbasicService.getinfo();
             return Msg.success().add("users", userpersonalinfo);
     	}
@@ -45,8 +72,8 @@ public class UserBasicController {
      */
     @RequestMapping("/all")
     @ResponseBody
-    public Msg getUserPersonalAllInfo(HttpServletRequest request, HttpServletResponse response) throws Exception{
-    	if (cookieUtils.getUserType(request).equals("1")) {
+    public Msg getUserPersonalAllInfo(HttpServletRequest request, @ModelAttribute("boolean")boolean judge){
+    	if (judge) {
     		List<UserBasic> userpersonalinfo = userbasicService.getall();
             return Msg.success().add("users", userpersonalinfo);
 		}
@@ -60,9 +87,8 @@ public class UserBasicController {
      */
     @RequestMapping(value = "/get",method = RequestMethod.GET)
     @ResponseBody
-    public Msg getCall(@RequestParam("userName")String userName ,
-    		HttpServletRequest request, HttpServletResponse response) throws Exception{
-    	if (cookieUtils.getUserType(request).equals("1")) {
+    public Msg getCall(@RequestParam("userName")String userName, @ModelAttribute("boolean")boolean judge){
+    	if (judge) {
     		UserBasic userBasic = userbasicService.getWithUserName(userName);
     		return Msg.success().add("user",userBasic);
         }
@@ -77,8 +103,8 @@ public class UserBasicController {
      */
     @ResponseBody
     @RequestMapping(value = "/{uid}",method = RequestMethod.PUT)
-    public Msg saveUser(UserBasic userbasic, HttpServletRequest request, HttpServletResponse response) throws Exception{
-    	if (cookieUtils.getUserType(request).equals("1")) {
+    public Msg saveUser(UserBasic userbasic, @ModelAttribute("boolean")boolean judge){
+    	if (judge) {
             userbasicService.updateInfo(userbasic);
             return Msg.success();
 		}
@@ -87,40 +113,4 @@ public class UserBasicController {
     	}
     }
 
-    /**
-     * 登录
-     * @throws Exception 
-     */
-    @RequestMapping(value = "/login", method = RequestMethod.POST)
-    @ResponseBody
-    public Msg login(@RequestParam("userPhonenumber")String userPhonenumber,
-                     @RequestParam("userPassword")String userPassword,
-                     HttpServletRequest request, HttpServletResponse response) throws Exception{
-        List<UserBasic> userList = userbasicService.getall();
-        for (UserBasic user:userList){
-            if (user.getUserPhonenumber().equals(userPhonenumber) && user.getUserPassword().equals(userPassword)){
-            	cookieUtils.setCookie(user.getUserName(),user.getUserDept(),response);
-                return Msg.success().add("user",user);
-            }
-        }
-        return Msg.fail();
-    }
-
-    /**
-     * 注册
-     */
-    @RequestMapping(value = "/register", method = RequestMethod.POST)
-    @ResponseBody
-    public Msg register(@RequestParam("userName")String userName,
-                        @RequestParam("userPassword")String userPassword,
-                        @RequestParam("userPhonenumber")String userPhonenumber){
-    	List<UserBasic> userList = userbasicService.getall();
-        for (UserBasic user:userList){
-            if (user.getUserName().equals(userName) || user.getUserPhonenumber().equals(userPhonenumber)){
-                return Msg.fail();
-            }
-        }
-        userbasicService.register(userName, userPassword,userPhonenumber);
-        return Msg.success();
-    }
 }

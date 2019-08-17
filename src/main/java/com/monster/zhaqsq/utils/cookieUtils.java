@@ -30,6 +30,7 @@ public class cookieUtils {
 
     public static void setCookie(String userid, String usertype, HttpServletResponse response) throws Exception{
         Date currentTime = new Date();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         byte[] uid = encryptUtils.encrypt(userid.getBytes(), key);
         byte[] uty = encryptUtils.encrypt(usertype.getBytes(), key);
 
@@ -40,8 +41,8 @@ public class cookieUtils {
         catch (Exception e) {
             throw new Exception(e);
         }
-
-        Cookie time = new Cookie("time", currentTime.toString());
+        //Cookie time = new Cookie("time", currentTime.toString());
+        Cookie time = new Cookie("time", sdf.format(currentTime));
         Cookie userId = new Cookie("userid", UserId);
         Cookie userType = new Cookie("usertype", UserType);
         time.setPath("/");

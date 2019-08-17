@@ -27,6 +27,31 @@ public class CallListController {
     @Autowired
     CallListService calllistService;
 
+    @ModelAttribute
+    public boolean userTypeJudge(HttpServletRequest request, HttpServletResponse response) throws Exception{
+        if(cookieUtils.getUserType(request).equals("1")){
+        	if(cookieUtils.userLoginTimeStatus(request)) {
+        		return true;
+        	}
+        	else {
+        		cookieUtils.clearCookie(request, response);
+        		return false;
+        	}
+        }
+        else if(cookieUtils.getUserType(request).equals("2")){
+        	if(cookieUtils.adminLoginTimeStatus(request)) {
+        		return true;
+        	}
+        	else {
+        		cookieUtils.clearCookie(request, response);
+        		return false;
+        	}
+        }
+        else {
+    		return false;
+		}
+    }
+    
     /**
      * 单个批量二合一
      * 批量删除：1-2-3
@@ -37,9 +62,8 @@ public class CallListController {
      */
     @ResponseBody
     @RequestMapping(value = "/delete/{ids}",method = RequestMethod.DELETE)
-    public Msg deleteCall(@PathVariable("ids")String ids,
-			   HttpServletRequest request, HttpServletResponse response) throws Exception{
-    	if (cookieUtils.getUserType(request).equals("1")) {
+    public Msg deleteCall(@PathVariable("ids")String ids, @ModelAttribute("boolean")boolean judge){
+    	if (judge) {
     		if (ids.contains("-")){
     			List<Integer> del_ids =new ArrayList<>();
     			String[] str_ids = ids.split("-");
@@ -64,9 +88,8 @@ public class CallListController {
      */
     @ResponseBody
     @RequestMapping(value="/update/{callId}",method = RequestMethod.PUT)
-    public Msg updateCall(CallList callList,
-			   HttpServletRequest request, HttpServletResponse response) throws Exception{
-    	if (cookieUtils.getUserType(request).equals("1")) {
+    public Msg updateCall(CallList callList, @ModelAttribute("boolean")boolean judge){
+    	if (judge) {
     		calllistService.updateCallList(callList);
     		return Msg.success();
     	}
@@ -80,9 +103,8 @@ public class CallListController {
      */
     @ResponseBody
     @RequestMapping(value="/updatetime",method = RequestMethod.PUT)
-    public Msg updateTime(Integer callId, String subTime, String endTime,
-			   HttpServletRequest request, HttpServletResponse response) throws Exception{
-    	if (cookieUtils.getUserType(request).equals("1")) {
+    public Msg updateTime(Integer callId, String subTime, String endTime, @ModelAttribute("boolean")boolean judge){
+    	if (judge) {
     		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     		Date sTime = null,eTime = null;
     		if(subTime!=null) {
@@ -106,9 +128,8 @@ public class CallListController {
      */
     @RequestMapping(value = "/get/{id}",method = RequestMethod.GET)
     @ResponseBody
-    public Msg getCall(@PathVariable("id")Integer id,
-			   HttpServletRequest request, HttpServletResponse response) throws Exception{
-    	if (cookieUtils.getUserType(request).equals("1")) {
+    public Msg getCall(@PathVariable("id")Integer id, @ModelAttribute("boolean")boolean judge){
+    	if (judge) {
     		CallList calllist = calllistService.getCall(id);
     		return Msg.success().add("call",calllist);
     	}
@@ -123,9 +144,8 @@ public class CallListController {
      */
     @RequestMapping(value = "/save",method = RequestMethod.POST)
     @ResponseBody
-    public Msg saveCall(CallList calllist,
-			   HttpServletRequest request, HttpServletResponse response) throws Exception{
-    	if (cookieUtils.getUserType(request).equals("1")) {
+    public Msg saveCall(CallList calllist, @ModelAttribute("boolean")boolean judge){
+    	if (judge) {
     		calllistService.saveCall(calllist);
     		return Msg.success();
     	}
@@ -141,9 +161,8 @@ public class CallListController {
 
     @RequestMapping("/calls")
     @ResponseBody
-    public Msg getcallsWithJson(@RequestParam(value="pn",defaultValue = "1")Integer pn,
-			   HttpServletRequest request, HttpServletResponse response) throws Exception{
-    	if (cookieUtils.getUserType(request).equals("1")) {
+    public Msg getcallsWithJson(@RequestParam(value="pn",defaultValue = "1")Integer pn, @ModelAttribute("boolean")boolean judge){
+    	if (judge) {
     		// 引入PageHelper分页插件
     		// 在查询之前只需要调用，传入页码，以及每页的大小
     		PageHelper.startPage(pn,5);
