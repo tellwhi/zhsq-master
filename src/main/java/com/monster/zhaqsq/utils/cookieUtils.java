@@ -30,7 +30,7 @@ public class cookieUtils {
 
     public static void setCookie(String userid, String usertype, HttpServletResponse response) throws Exception{
         Date currentTime = new Date();
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd-HH:mm:ss");
         byte[] uid = encryptUtils.encrypt(userid.getBytes(), key);
         byte[] uty = encryptUtils.encrypt(usertype.getBytes(), key);
 
@@ -127,7 +127,7 @@ public class cookieUtils {
      */
     public static Boolean adminLoginTimeStatus(HttpServletRequest request) throws Exception{
         Date date= new Date();
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd-HH:mm:ss");
         Date loginTime = sdf.parse(getTime(request));
         if(date.getTime() >= loginTime.getTime() + adminKeepTime){
             return false;
@@ -146,7 +146,7 @@ public class cookieUtils {
      */
     public static Boolean userLoginTimeStatus(HttpServletRequest request) throws Exception{
         Date date= new Date();
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd-HH:mm:ss");
         Date loginTime = sdf.parse(getTime(request));
         if(date.getTime() >= loginTime.getTime() + userKeepTime){
             return false;
