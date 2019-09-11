@@ -84,9 +84,24 @@ public class UserAndComController {
 	 */
 	@RequestMapping(value="/deletec",method=RequestMethod.DELETE)
 	@ResponseBody
-	public Msg deleteByComid(Integer cIdS, @ModelAttribute("boolean")boolean judge){
+	public Msg deleteByComid(Integer cId, @ModelAttribute("boolean")boolean judge){
     	if (judge) {
-			userAndComService.deleteByCId(cIdS);
+			userAndComService.deleteByCId(cId);
+			return Msg.success();
+		}
+    	else {
+			return Msg.fail();
+		}
+	}
+	
+	/**
+	 * 根据cid删除
+	 */
+	@RequestMapping(value="/deleteunc",method=RequestMethod.DELETE)
+	@ResponseBody
+	public Msg deleteByUNC(Integer uId, Integer cId, @ModelAttribute("boolean")boolean judge){
+    	if (judge) {
+			userAndComService.deleteByUNC(uId, cId);
 			return Msg.success();
 		}
     	else {

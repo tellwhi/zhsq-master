@@ -22,6 +22,10 @@ public interface CallListMapper {
 
     CallList selectByPrimaryKey(Integer callId);
     
+    List<CallList> selectBysub(Integer subId);
+    
+    List<CallList> selectByrec(Integer recId);
+    
     //更新接收人
     int updateRec(@Param("recId")Integer recId, @Param("recName")String recName, @Param("callId")Integer callId);
 

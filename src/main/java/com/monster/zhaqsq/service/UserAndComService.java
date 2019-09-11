@@ -23,6 +23,10 @@ public class UserAndComService {
 		userAndComMapper.deleteByUId(uId);
 	}
 	
+	public void deleteByUNC(Integer uId, Integer cId) {
+		userAndComMapper.deleteByUNC(uId, cId);
+	}
+	
 	public void deleteByCId(Integer cId) {
 		userAndComMapper.deleteByCId(cId);
 	}

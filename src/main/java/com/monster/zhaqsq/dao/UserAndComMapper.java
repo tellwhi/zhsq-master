@@ -31,6 +31,11 @@ public interface UserAndComMapper {
      */
     int deleteByCId(Integer cId); 
 
+    
+    /*
+     *  根据comid和uid删除
+     */
+    int deleteByUNC(@Param("uId")Integer uId, @Param("cId")Integer cId); 
 
     /*
      *  根据uid查询comid 

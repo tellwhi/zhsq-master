@@ -137,6 +137,36 @@ public class CallListController {
 			return Msg.fail();
 		}
     }
+    
+    /**
+     * 根据发布者查询
+     */
+    @RequestMapping(value = "/getBysub",method = RequestMethod.GET)
+    @ResponseBody
+    public Msg selectBysub(Integer subId, @ModelAttribute("boolean")boolean judge){
+    	if (judge) {
+    		List<CallList> calllists = calllistService.selectBysub(subId);
+    		return Msg.success().add("calls",calllists);
+    	}
+    	else {
+			return Msg.fail();
+		}
+    }
+    
+    /**
+     * 根据接收者查询
+     */
+    @RequestMapping(value = "/getByrec",method = RequestMethod.GET)
+    @ResponseBody
+    public Msg selectByrec(Integer recId, @ModelAttribute("boolean")boolean judge){
+    	if (judge) {
+    		List<CallList> calllists = calllistService.selectByrec(recId);
+    		return Msg.success().add("calls",calllists);
+    	}
+    	else {
+			return Msg.fail();
+		}
+    }
 
     /**
      * 任务保存

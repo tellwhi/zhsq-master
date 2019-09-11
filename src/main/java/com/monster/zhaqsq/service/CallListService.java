@@ -22,6 +22,18 @@ public class CallListService {
         return list;
     }
 
+    //根据发布者查询
+    public List<CallList> selectBysub(Integer subId) {
+        List<CallList> list = callListMapper.selectBysub(subId);
+        return list;
+    }
+    
+    //根据接收者查询
+    public List<CallList> selectByrec(Integer recId) {
+        List<CallList> list = callListMapper.selectByrec(recId);
+        return list;
+    }
+    
 	/*
 	 * 插入新任务
 	 */

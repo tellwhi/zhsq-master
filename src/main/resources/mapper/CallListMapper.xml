@@ -98,6 +98,22 @@
     where call_id = #{callId,jdbcType=INTEGER}
   </select>
   
+  <select id="selectBysub" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tbl_calllist
+    where sub_id = #{subId,jdbcType=INTEGER}
+  </select>
+  
+  
+  <select id="selectByrec" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tbl_calllist
+    where rec_id = #{recId,jdbcType=INTEGER}
+  </select>
+  
+  
       
   <!-- 更新接收人-->
   <update id="updateRec">

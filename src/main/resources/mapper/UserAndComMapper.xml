@@ -180,6 +180,11 @@
     where c_id = #{cId,jdbcType=INTEGER}
   </delete>
   
+  <!-- 根据comid删除 -->
+  <delete id="deleteByUNC">
+    delete from tbl_userandcom
+    where u_id = #{uId,jdbcType=INTEGER} and c_id = #{cId,jdbcType=INTEGER}
+  </delete>
 
 
   <!-- 根据uid查询comid -->
