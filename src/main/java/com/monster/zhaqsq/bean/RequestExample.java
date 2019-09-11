@@ -104,63 +104,63 @@ public class RequestExample {
             criteria.add(new Criterion(condition, value1, value2));
         }
 
-        public Criteria andRequestidIsNull() {
-            addCriterion("requestId is null");
+        public Criteria andRidIsNull() {
+            addCriterion("rId is null");
             return (Criteria) this;
         }
 
-        public Criteria andRequestidIsNotNull() {
-            addCriterion("requestId is not null");
+        public Criteria andRidIsNotNull() {
+            addCriterion("rId is not null");
             return (Criteria) this;
         }
 
-        public Criteria andRequestidEqualTo(Integer value) {
-            addCriterion("requestId =", value, "requestid");
+        public Criteria andRidEqualTo(Integer value) {
+            addCriterion("rId =", value, "rid");
             return (Criteria) this;
         }
 
-        public Criteria andRequestidNotEqualTo(Integer value) {
-            addCriterion("requestId <>", value, "requestid");
+        public Criteria andRidNotEqualTo(Integer value) {
+            addCriterion("rId <>", value, "rid");
             return (Criteria) this;
         }
 
-        public Criteria andRequestidGreaterThan(Integer value) {
-            addCriterion("requestId >", value, "requestid");
+        public Criteria andRidGreaterThan(Integer value) {
+            addCriterion("rId >", value, "rid");
             return (Criteria) this;
         }
 
-        public Criteria andRequestidGreaterThanOrEqualTo(Integer value) {
-            addCriterion("requestId >=", value, "requestid");
+        public Criteria andRidGreaterThanOrEqualTo(Integer value) {
+            addCriterion("rId >=", value, "rid");
             return (Criteria) this;
         }
 
-        public Criteria andRequestidLessThan(Integer value) {
-            addCriterion("requestId <", value, "requestid");
+        public Criteria andRidLessThan(Integer value) {
+            addCriterion("rId <", value, "rid");
             return (Criteria) this;
         }
 
-        public Criteria andRequestidLessThanOrEqualTo(Integer value) {
-            addCriterion("requestId <=", value, "requestid");
+        public Criteria andRidLessThanOrEqualTo(Integer value) {
+            addCriterion("rId <=", value, "rid");
             return (Criteria) this;
         }
 
-        public Criteria andRequestidIn(List<Integer> values) {
-            addCriterion("requestId in", values, "requestid");
+        public Criteria andRidIn(List<Integer> values) {
+            addCriterion("rId in", values, "rid");
             return (Criteria) this;
         }
 
-        public Criteria andRequestidNotIn(List<Integer> values) {
-            addCriterion("requestId not in", values, "requestid");
+        public Criteria andRidNotIn(List<Integer> values) {
+            addCriterion("rId not in", values, "rid");
             return (Criteria) this;
         }
 
-        public Criteria andRequestidBetween(Integer value1, Integer value2) {
-            addCriterion("requestId between", value1, value2, "requestid");
+        public Criteria andRidBetween(Integer value1, Integer value2) {
+            addCriterion("rId between", value1, value2, "rid");
             return (Criteria) this;
         }
 
-        public Criteria andRequestidNotBetween(Integer value1, Integer value2) {
-            addCriterion("requestId not between", value1, value2, "requestid");
+        public Criteria andRidNotBetween(Integer value1, Integer value2) {
+            addCriterion("rId not between", value1, value2, "rid");
             return (Criteria) this;
         }
 
@@ -231,6 +231,76 @@ public class RequestExample {
 
         public Criteria andNotifytypeNotBetween(String value1, String value2) {
             addCriterion("notifyType not between", value1, value2, "notifytype");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequestidIsNull() {
+            addCriterion("requestId is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequestidIsNotNull() {
+            addCriterion("requestId is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequestidEqualTo(String value) {
+            addCriterion("requestId =", value, "requestid");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequestidNotEqualTo(String value) {
+            addCriterion("requestId <>", value, "requestid");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequestidGreaterThan(String value) {
+            addCriterion("requestId >", value, "requestid");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequestidGreaterThanOrEqualTo(String value) {
+            addCriterion("requestId >=", value, "requestid");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequestidLessThan(String value) {
+            addCriterion("requestId <", value, "requestid");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequestidLessThanOrEqualTo(String value) {
+            addCriterion("requestId <=", value, "requestid");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequestidLike(String value) {
+            addCriterion("requestId like", value, "requestid");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequestidNotLike(String value) {
+            addCriterion("requestId not like", value, "requestid");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequestidIn(List<String> values) {
+            addCriterion("requestId in", values, "requestid");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequestidNotIn(List<String> values) {
+            addCriterion("requestId not in", values, "requestid");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequestidBetween(String value1, String value2) {
+            addCriterion("requestId between", value1, value2, "requestid");
+            return (Criteria) this;
+        }
+
+        public Criteria andRequestidNotBetween(String value1, String value2) {
+            addCriterion("requestId not between", value1, value2, "requestid");
             return (Criteria) this;
         }
 

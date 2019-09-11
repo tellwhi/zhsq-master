@@ -2,8 +2,9 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.monster.zhaqsq.dao.RequestMapper">
   <resultMap id="BaseResultMap" type="com.monster.zhaqsq.bean.Request">
-    <id column="requestId" jdbcType="INTEGER" property="requestid" />
+    <id column="rId" jdbcType="INTEGER" property="rid" />
     <result column="notifyType" jdbcType="VARCHAR" property="notifytype" />
+    <result column="requestId" jdbcType="VARCHAR" property="requestid" />
     <result column="deviceId" jdbcType="VARCHAR" property="deviceid" />
     <result column="gatewayId" jdbcType="VARCHAR" property="gatewayid" />
     <result column="serviceId" jdbcType="VARCHAR" property="serviceid" />
@@ -74,7 +75,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    requestId, notifyType, deviceId, gatewayId, serviceId, serviceType, deviceNumber, 
+    rId, notifyType, requestId, deviceId, gatewayId, serviceId, serviceType, deviceNumber, 
     dimension, NSFlag, longitude, WEFlag, eventTime
   </sql>
   <select id="selectByExample" parameterType="com.monster.zhaqsq.bean.RequestExample" resultMap="BaseResultMap">
@@ -95,11 +96,11 @@
     select 
     <include refid="Base_Column_List" />
     from tbl_request
-    where requestId = #{requestid,jdbcType=INTEGER}
+    where rId = #{rid,jdbcType=INTEGER}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from tbl_request
-    where requestId = #{requestid,jdbcType=INTEGER}
+    where rId = #{rid,jdbcType=INTEGER}
   </delete>
   <delete id="deleteByExample" parameterType="com.monster.zhaqsq.bean.RequestExample">
     delete from tbl_request
@@ -108,25 +109,28 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.monster.zhaqsq.bean.Request">
-    insert into tbl_request (requestId, notifyType, deviceId, 
-      gatewayId, serviceId, serviceType, 
-      deviceNumber, dimension, NSFlag, 
-      longitude, WEFlag, eventTime
-      )
-    values (#{requestid,jdbcType=INTEGER}, #{notifytype,jdbcType=VARCHAR}, #{deviceid,jdbcType=VARCHAR}, 
-      #{gatewayid,jdbcType=VARCHAR}, #{serviceid,jdbcType=VARCHAR}, #{servicetype,jdbcType=VARCHAR}, 
-      #{devicenumber,jdbcType=VARCHAR}, #{dimension,jdbcType=VARCHAR}, #{nsflag,jdbcType=CHAR}, 
-      #{longitude,jdbcType=VARCHAR}, #{weflag,jdbcType=CHAR}, #{eventtime,jdbcType=VARCHAR}
-      )
+    insert into tbl_request (rId, notifyType, requestId, 
+      deviceId, gatewayId, serviceId, 
+      serviceType, deviceNumber, dimension, 
+      NSFlag, longitude, WEFlag, 
+      eventTime)
+    values (#{rid,jdbcType=INTEGER}, #{notifytype,jdbcType=VARCHAR}, #{requestid,jdbcType=VARCHAR}, 
+      #{deviceid,jdbcType=VARCHAR}, #{gatewayid,jdbcType=VARCHAR}, #{serviceid,jdbcType=VARCHAR}, 
+      #{servicetype,jdbcType=VARCHAR}, #{devicenumber,jdbcType=VARCHAR}, #{dimension,jdbcType=VARCHAR}, 
+      #{nsflag,jdbcType=CHAR}, #{longitude,jdbcType=VARCHAR}, #{weflag,jdbcType=CHAR}, 
+      #{eventtime,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.monster.zhaqsq.bean.Request">
     insert into tbl_request
     <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="requestid != null">
-        requestId,
+      <if test="rid != null">
+        rId,
       </if>
       <if test="notifytype != null">
         notifyType,
+      </if>
+      <if test="requestid != null">
+        requestId,
       </if>
       <if test="deviceid != null">
         deviceId,
@@ -160,11 +164,14 @@
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="requestid != null">
-        #{requestid,jdbcType=INTEGER},
+      <if test="rid != null">
+        #{rid,jdbcType=INTEGER},
       </if>
       <if test="notifytype != null">
         #{notifytype,jdbcType=VARCHAR},
+      </if>
+      <if test="requestid != null">
+        #{requestid,jdbcType=VARCHAR},
       </if>
       <if test="deviceid != null">
         #{deviceid,jdbcType=VARCHAR},
@@ -207,11 +214,14 @@
   <update id="updateByExampleSelective" parameterType="map">
     update tbl_request
     <set>
-      <if test="record.requestid != null">
-        requestId = #{record.requestid,jdbcType=INTEGER},
+      <if test="record.rid != null">
+        rId = #{record.rid,jdbcType=INTEGER},
       </if>
       <if test="record.notifytype != null">
         notifyType = #{record.notifytype,jdbcType=VARCHAR},
+      </if>
+      <if test="record.requestid != null">
+        requestId = #{record.requestid,jdbcType=VARCHAR},
       </if>
       <if test="record.deviceid != null">
         deviceId = #{record.deviceid,jdbcType=VARCHAR},
@@ -250,8 +260,9 @@
   </update>
   <update id="updateByExample" parameterType="map">
     update tbl_request
-    set requestId = #{record.requestid,jdbcType=INTEGER},
+    set rId = #{record.rid,jdbcType=INTEGER},
       notifyType = #{record.notifytype,jdbcType=VARCHAR},
+      requestId = #{record.requestid,jdbcType=VARCHAR},
       deviceId = #{record.deviceid,jdbcType=VARCHAR},
       gatewayId = #{record.gatewayid,jdbcType=VARCHAR},
       serviceId = #{record.serviceid,jdbcType=VARCHAR},
@@ -271,6 +282,9 @@
     <set>
       <if test="notifytype != null">
         notifyType = #{notifytype,jdbcType=VARCHAR},
+      </if>
+      <if test="requestid != null">
+        requestId = #{requestid,jdbcType=VARCHAR},
       </if>
       <if test="deviceid != null">
         deviceId = #{deviceid,jdbcType=VARCHAR},
@@ -303,11 +317,12 @@
         eventTime = #{eventtime,jdbcType=VARCHAR},
       </if>
     </set>
-    where requestId = #{requestid,jdbcType=INTEGER}
+    where rId = #{rid,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.monster.zhaqsq.bean.Request">
     update tbl_request
     set notifyType = #{notifytype,jdbcType=VARCHAR},
+      requestId = #{requestid,jdbcType=VARCHAR},
       deviceId = #{deviceid,jdbcType=VARCHAR},
       gatewayId = #{gatewayid,jdbcType=VARCHAR},
       serviceId = #{serviceid,jdbcType=VARCHAR},
@@ -318,6 +333,6 @@
       longitude = #{longitude,jdbcType=VARCHAR},
       WEFlag = #{weflag,jdbcType=CHAR},
       eventTime = #{eventtime,jdbcType=VARCHAR}
-    where requestId = #{requestid,jdbcType=INTEGER}
+    where rId = #{rid,jdbcType=INTEGER}
   </update>
 </mapper>

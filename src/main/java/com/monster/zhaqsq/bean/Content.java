@@ -6,7 +6,7 @@ public class Content {
 	
 	
 
-   public Content(String notifyType, Integer requestId, String deviceId, String gatewayId, List<Services> services) {
+   public Content(String notifyType, String requestId, String deviceId, String gatewayId, List<Services> services) {
 		super();
 		this.notifyType = notifyType;
 		this.requestId = requestId;
@@ -20,7 +20,7 @@ public class Content {
 		// TODO Auto-generated constructor stub
 	}
    private String notifyType;
-   private Integer requestId;
+   private String requestId;
    private String deviceId;
    private String gatewayId;
    private List<Services> services;
@@ -31,10 +31,10 @@ public class Content {
         return notifyType;
     }
     
-    public void setRequestId(Integer requestId) {
+    public void setRequestId(String requestId) {
         this.requestId = requestId;
     }
-    public Integer getRequestId() {
+    public String getRequestId() {
         return requestId;
     }
     

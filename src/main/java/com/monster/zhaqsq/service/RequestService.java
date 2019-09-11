@@ -16,8 +16,8 @@ public class RequestService {
 		requestMapper.insertSelective(request);
 	}
 	
-	public Request getRequest(int requestId) {
-		return requestMapper.selectByPrimaryKey(requestId);
-	}
+//	public Request getRequest(int requestId) {
+//		return requestMapper.selectByPrimaryKey(requestId);
+//	}
 	
 }

@@ -10,7 +10,7 @@ public interface RequestMapper {
 
     int deleteByExample(RequestExample example);
 
-    int deleteByPrimaryKey(Integer requestid);
+    int deleteByPrimaryKey(Integer rid);
 
     int insert(Request record);
 
@@ -18,7 +18,7 @@ public interface RequestMapper {
 
     List<Request> selectByExample(RequestExample example);
 
-    Request selectByPrimaryKey(Integer requestid);
+    Request selectByPrimaryKey(Integer rid);
 
     int updateByExampleSelective(@Param("record") Request record, @Param("example") RequestExample example);
 

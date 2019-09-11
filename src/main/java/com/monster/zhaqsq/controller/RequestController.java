@@ -57,11 +57,11 @@ public class RequestController {
 		return Msg.success();
     }
 	
-	@RequestMapping(value = "/get/{id}",method = RequestMethod.GET)
-	@ResponseBody
-	public Msg getRequest(@PathVariable("id")Integer id) {
-		Request request=requestService.getRequest(id);
-		return Msg.success().add("request", request);
-	}
+//	@RequestMapping(value = "/get/{id}",method = RequestMethod.GET)
+//	@ResponseBody
+//	public Msg getRequest(@PathVariable("id")Integer id) {
+//		Request request=requestService.getRequest(id);
+//		return Msg.success().add("request", request);
+//	}
 	
 }

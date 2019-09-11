@@ -3,18 +3,19 @@ package com.monster.zhaqsq.bean;
 public class Request {
 	
 	
+	
     public Request() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-    
-    
-	public Request(Integer requestid, String notifytype, String deviceid, String gatewayid, String serviceid,
-			String servicetype, String devicenumber, String dimension, String nsflag, String longitude, String weflag,
-			String eventtime) {
+
+	public Request(Integer rid, String notifytype, String requestid, String deviceid, String gatewayid,
+			String serviceid, String servicetype, String devicenumber, String dimension, String nsflag,
+			String longitude, String weflag, String eventtime) {
 		super();
-		this.requestid = requestid;
+		this.rid = rid;
 		this.notifytype = notifytype;
+		this.requestid = requestid;
 		this.deviceid = deviceid;
 		this.gatewayid = gatewayid;
 		this.serviceid = serviceid;
@@ -27,9 +28,11 @@ public class Request {
 		this.eventtime = eventtime;
 	}
 
-	private Integer requestid;
+	private Integer rid;
 
     private String notifytype;
+
+    private String requestid;
 
     private String deviceid;
 
@@ -51,12 +54,12 @@ public class Request {
 
     private String eventtime;
 
-    public Integer getRequestid() {
-        return requestid;
+    public Integer getRid() {
+        return rid;
     }
 
-    public void setRequestid(Integer requestid) {
-        this.requestid = requestid;
+    public void setRid(Integer rid) {
+        this.rid = rid;
     }
 
     public String getNotifytype() {
@@ -65,6 +68,14 @@ public class Request {
 
     public void setNotifytype(String notifytype) {
         this.notifytype = notifytype == null ? null : notifytype.trim();
+    }
+
+    public String getRequestid() {
+        return requestid;
+    }
+
+    public void setRequestid(String requestid) {
+        this.requestid = requestid == null ? null : requestid.trim();
     }
 
     public String getDeviceid() {
