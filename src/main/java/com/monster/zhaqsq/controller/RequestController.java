@@ -32,7 +32,7 @@ public class RequestController {
     @ResponseBody
     public Msg insert(String content){
 		
-		Content con=JSON.parseObject(content.substring(1, content.length()-2) ,Content.class);
+		Content con=JSON.parseObject(content.substring(0, content.length()) ,Content.class);
 		Request request=new Request();
 		
 		request.setNotifytype(con.getNotifyType());

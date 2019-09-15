@@ -37,6 +37,11 @@ public class UserBasicService {
     	return userbasicMapper.selectByUserName(userName);
     }
 
+    public UserBasic getWithUid(int uid) {
+    	return userbasicMapper.selectByPrimaryKey(uid);
+    }
+    
+    
     /**
      * 更新用户信息
      */

@@ -87,9 +87,9 @@ public class UserBasicController {
      */
     @RequestMapping(value = "/get",method = RequestMethod.GET)
     @ResponseBody
-    public Msg getCall(@RequestParam("userName")String userName, @ModelAttribute("boolean")boolean judge){
+    public Msg getCall(@RequestParam("uid")int uid, @ModelAttribute("boolean")boolean judge){
     	if (judge) {
-    		UserBasic userBasic = userbasicService.getWithUserName(userName);
+    		UserBasic userBasic = userbasicService.getWithUid(uid);
     		return Msg.success().add("user",userBasic);
         }
     	else {
