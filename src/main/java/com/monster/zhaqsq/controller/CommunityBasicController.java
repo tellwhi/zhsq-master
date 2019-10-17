@@ -81,6 +81,21 @@ public class CommunityBasicController {
 			return Msg.fail();
 		}
     }
+    
+    /**
+     * 根据comTitle查询社区
+     */
+    @RequestMapping(value = "/like",method = RequestMethod.GET)
+    @ResponseBody
+    public Msg selectLikeByTitle(@RequestParam("comTitle")String comTitle, @ModelAttribute("boolean")boolean judge){
+    	if (judge) {
+    		List<CommunityBasic> communities = communitybasicService.selectLikeByTitle(comTitle);
+    		return Msg.success().add("communities", communities);
+    	}
+    	else {
+			return Msg.fail();
+		}
+    }
 
     /**
      *插入新社区

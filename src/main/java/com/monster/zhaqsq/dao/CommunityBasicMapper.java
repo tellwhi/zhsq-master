@@ -2,8 +2,6 @@ package com.monster.zhaqsq.dao;
 
 import com.monster.zhaqsq.bean.CommunityBasic;
 import com.monster.zhaqsq.bean.CommunityBasicExample;
-import com.monster.zhaqsq.bean.UserAddress;
-
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
@@ -21,7 +19,11 @@ public interface CommunityBasicMapper {
     List<CommunityBasic> selectByExampleWithBLOBs(CommunityBasicExample example);
 
     List<CommunityBasic> selectByExample(CommunityBasicExample example);
+    
+    //模糊查询
+    List<CommunityBasic> selectLikeByTitle(String comTitle);
 
+    
     CommunityBasic selectByPrimaryKey(Integer comId);
     
 

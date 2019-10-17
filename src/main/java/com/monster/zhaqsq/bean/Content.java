@@ -1,18 +1,22 @@
 package com.monster.zhaqsq.bean;
 
-import java.util.List;
-
 public class Content {
 	
 	
 
-   public Content(String notifyType, String requestId, String deviceId, String gatewayId, List<Services> services) {
+   @Override
+	public String toString() {
+		return "Content [notifyType=" + notifyType + ", requestId=" + requestId + ", deviceId=" + deviceId
+				+ ", gatewayId=" + gatewayId + ", service=" + service + "]";
+	}
+
+public Content(String notifyType, String requestId, String deviceId, String gatewayId, Service service) {
 		super();
 		this.notifyType = notifyType;
 		this.requestId = requestId;
 		this.deviceId = deviceId;
 		this.gatewayId = gatewayId;
-		this.services = services;
+		this.service = service;
 	}
    
    public Content() {
@@ -23,7 +27,7 @@ public class Content {
    private String requestId;
    private String deviceId;
    private String gatewayId;
-   private List<Services> services;
+   private Service service;
    public void setNotifyType(String notifyType) {
         this.notifyType = notifyType;
     }
@@ -52,11 +56,11 @@ public class Content {
         return gatewayId;
     }
 
-   public void setServices(List<Services> services) {
-        this.services = services;
+   public void setService(Service service) {
+        this.service = service;
     }
-    public List<Services> getServices() {
-        return services;
+    public Service getService() {
+        return service;
     }
 
 }

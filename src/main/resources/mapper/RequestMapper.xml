@@ -98,6 +98,16 @@
     from tbl_request
     where rId = #{rid,jdbcType=INTEGER}
   </select>
+  
+  <!-- 根据deviceNumber查询最后一行 -->
+  <select id="selectBydeviceNumber" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tbl_request
+    where deviceNumber = #{devicenumber,jdbcType=VARCHAR} 
+    order by rId DESC limit 1
+  </select>
+  
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from tbl_request
     where rId = #{rid,jdbcType=INTEGER}

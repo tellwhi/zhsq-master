@@ -30,6 +30,14 @@ public class CommunityBasicService {
 	}
 	
 	/**
+	 * 根据comTitle模糊查询
+	 * @param comTitle
+	 */
+	public List<CommunityBasic> selectLikeByTitle(String comTitle) {
+		return communityBasicMapper.selectLikeByTitle(comTitle);
+	}
+	
+	/**
 	 *插入新社区
 	 */
 	public void saveCom(CommunityBasic communityBasic){

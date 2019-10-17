@@ -114,6 +114,17 @@
     from tbl_communitybasic
     where com_id = #{comId,jdbcType=INTEGER}
   </select>
+  
+  <select id="selectLikeByTitle" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from tbl_communitybasic
+    where com_title LIKE concat('%',#{comTitle,jdbcType=VARCHAR},'%')
+    order by case when com_title LIKE  concat(#{comTitle,jdbcType=VARCHAR},'%') then 1 else 0 end desc
+  </select>
+  
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from tbl_communitybasic
     where com_id = #{comId,jdbcType=INTEGER}

@@ -19,6 +19,9 @@ public interface RequestMapper {
     List<Request> selectByExample(RequestExample example);
 
     Request selectByPrimaryKey(Integer rid);
+    
+    //根据deviceNumber查询最后一行
+    Request selectBydeviceNumber(String devicenumber);
 
     int updateByExampleSelective(@Param("record") Request record, @Param("example") RequestExample example);
 

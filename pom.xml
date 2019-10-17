@@ -76,6 +76,14 @@
       <version>5.0.7.RELEASE</version>
     </dependency>
 
+	<!-- https://mvnrepository.com/artifact/aopalliance/aopalliance -->
+	<dependency>
+      <groupId>aopalliance</groupId>
+      <artifactId>aopalliance</artifactId>
+      <version>1.0</version>
+	</dependency>
+	
+
     <!-- MyBatis -->
     <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
     <dependency>

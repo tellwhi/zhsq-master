@@ -15,6 +15,7 @@
     <result column="rec_name" jdbcType="VARCHAR" property="recName" />
     <result column="call_address" jdbcType="VARCHAR" property="callAddress" />
   </resultMap>
+  
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">
@@ -105,6 +106,13 @@
     where sub_id = #{subId,jdbcType=INTEGER}
   </select>
   
+  <select id="selectComCall" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    FROM tbl_calllist WHERE  call_now = #{callNow,jdbcType=INTEGER} AND sub_id IN 
+    (SELECT u_id FROM tbl_userandcom WHERE u_id != #{subId,jdbcType=INTEGER} AND c_id IN 
+	(SELECT c_id FROM tbl_userandcom WHERE u_id = #{subId,jdbcType=INTEGER} ))
+  </select>
   
   <select id="selectByrec" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 

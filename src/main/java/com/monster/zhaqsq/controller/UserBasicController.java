@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.cookie;
+
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -27,27 +29,33 @@ public class UserBasicController {
 
     @ModelAttribute
     public boolean userTypeJudge(HttpServletRequest request, HttpServletResponse response) throws Exception{
-        if(cookieUtils.getUserType(request).equals("1")){
-        	if(cookieUtils.userLoginTimeStatus(request)) {
-        		return true;
-        	}
-        	else {
-        		cookieUtils.clearCookie(request, response);
-        		return false;
-        	}
-        }
-        else if(cookieUtils.getUserType(request).equals("2")){
-        	if(cookieUtils.adminLoginTimeStatus(request)) {
-        		return true;
-        	}
-        	else {
-        		cookieUtils.clearCookie(request, response);
-        		return false;
-        	}
-        }
-        else {
-    		return false;
+    	
+    	if (request.getCookies()==null) {
+			return false;
 		}
+    	else {
+            if(cookieUtils.getUserType(request).equals("1")){
+            	if(cookieUtils.userLoginTimeStatus(request)) {
+            		return true;
+            	}
+            	else {
+            		cookieUtils.clearCookie(request, response);
+            		return false;
+            	}
+            }
+            else if(cookieUtils.getUserType(request).equals("2")){
+            	if(cookieUtils.adminLoginTimeStatus(request)) {
+            		return true;
+            	}
+            	else {
+            		cookieUtils.clearCookie(request, response);
+            		return false;
+            	}
+            }
+            else {
+        		return false;
+    		}
+    	}
     }
     
     

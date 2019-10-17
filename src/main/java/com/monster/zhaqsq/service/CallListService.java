@@ -2,10 +2,14 @@ package com.monster.zhaqsq.service;
 
 import com.monster.zhaqsq.bean.CallList;
 import com.monster.zhaqsq.bean.CallListExample;
+import com.monster.zhaqsq.bean.UserAndCom;
 import com.monster.zhaqsq.dao.CallListMapper;
+import com.monster.zhaqsq.dao.UserAndComMapper;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -14,7 +18,14 @@ public class CallListService {
 
     @Autowired
     CallListMapper callListMapper;
+    
+    @Autowired
+    UserAndComMapper userAndComMapper;
 
+    /*得到用户所在社区的任务*/
+    public List<CallList> getComCallList(int subId, int callNow) {	
+    	return callListMapper.selectComCall(subId, callNow);
+    }
 
 	/*得到用户个人信息*/
     public List<CallList> getinfo() {

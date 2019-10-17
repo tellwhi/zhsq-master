@@ -1,28 +1,45 @@
 package com.monster.zhaqsq.bean;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Data {
 
 	
 	
-   public Data() {
+    @Override
+	public String toString() {
+		return "Data [deviceNumber=" + deviceNumber + ", dimension=" + dimension + ", NSFlag=" + NSFlag + ", longitude="
+				+ longitude + ", WEFlag=" + WEFlag + "]";
+	}
+
+    public Data() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
    
-   public Data(String deviceNumber, String dimension, String nSFlag, String longitude, String wEFlag) {
+
+   public Data(String deviceNumber, String dimension, String NSFlag, String longitude, String WEFlag) {
 		super();
 		this.deviceNumber = deviceNumber;
 		this.dimension = dimension;
-		NSFlag = nSFlag;
+		this.NSFlag = NSFlag;
 		this.longitude = longitude;
-		WEFlag = wEFlag;
+		this.WEFlag = WEFlag;
 	}
-   
+
+
    private String deviceNumber;
+   
    private String dimension;
+   
+   @JsonProperty
    private String NSFlag;
+   
    private String longitude;
+   
+   @JsonProperty
    private String WEFlag;
+   
    public void setDeviceNumber(String deviceNumber) {
         this.deviceNumber = deviceNumber;
     }

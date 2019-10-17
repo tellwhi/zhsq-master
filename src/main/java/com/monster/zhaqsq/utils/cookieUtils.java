@@ -60,6 +60,9 @@ public class cookieUtils {
      */
     public static String getUserId(HttpServletRequest request) throws Exception{
         Cookie[] cookies=request.getCookies();
+        if(cookies == null) {
+        	return null;
+        }
         for(Cookie cookie:cookies){
             String name=cookie.getName();
             String value=cookie.getValue();
@@ -77,6 +80,9 @@ public class cookieUtils {
      */
     public static String getUserType(HttpServletRequest request) throws Exception{
         Cookie[] cookies=request.getCookies();
+        if(cookies == null) {
+        	return null;
+        }
         for(Cookie cookie:cookies){
             String name=cookie.getName();
             String value=cookie.getValue();
@@ -94,6 +100,9 @@ public class cookieUtils {
      */
     public static String getTime(HttpServletRequest request) throws Exception{
         Cookie[] cookies=request.getCookies();
+        if(cookies == null) {
+        	return null;
+        }
         for(Cookie cookie:cookies){
             String name=cookie.getName();
             String value=cookie.getValue();
@@ -112,6 +121,9 @@ public class cookieUtils {
      */
     public static void clearCookie(HttpServletRequest request,HttpServletResponse response){
         Cookie[] cookies=request.getCookies();
+        if(cookies == null) {
+        	return;
+        }
         for(Cookie cookie: cookies){
             cookie.setMaxAge(0);
             cookie.setPath("/");

@@ -3,15 +3,29 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
-		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
+
+	<!-- <aop:aspectj-autoproxy /> -->
+	
     <!--SpringMVC的配置文件，包含网站跳转逻辑的控制，配置  -->
     <context:component-scan base-package="com.monster" use-default-filters="false">
         <!--只扫描控制器。  -->
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
+    
+    <!-- <bean id="restfulAop" class="com.monster.zhaqsq.aop.LogAdvice"/>
+    <aop:config expose-proxy="true">
+        <aop:pointcut id="restfulPointcut" expression="execution(public * com.monster.zhaqsq.controller.CallListController.*(..))"/>
+        <aop:aspect ref="restfulAop"> 
+            <aop:after pointcut-ref="restfulPointcut" method="after"/>
+        </aop:aspect>
+    </aop:config> -->
+	
 
     <!--配置视图解析器，方便页面返回  -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -24,5 +38,18 @@
     <mvc:default-servlet-handler/>
     <!-- 能支持springmvc更高级的一些功能，JSR303校验，快捷的ajax...映射动态请求 -->
     <mvc:annotation-driven/>
+    
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+			<!--不拦截的 -->
+        	<mvc:exclude-mapping path="/user/login"/>
+            <mvc:exclude-mapping path="/user/register"/>
+            <mvc:exclude-mapping path="/request/**"/>
+            <mvc:exclude-mapping path="/cookie/**"/>
+            <!-- 定义在mvc:interceptor下面的表示是对特定的请求才进行拦截的 -->
+            <bean class="com.monster.zhaqsq.interceptor.CookieInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
 
 </beans>

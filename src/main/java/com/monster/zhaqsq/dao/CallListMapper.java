@@ -26,6 +26,9 @@ public interface CallListMapper {
     
     List<CallList> selectByrec(Integer recId);
     
+    //查询用户所在社区任务
+    List<CallList> selectComCall(@Param("subId")Integer subId, @Param("callNow")Integer callNow);
+    
     //更新接收人
     int updateRec(@Param("recId")Integer recId, @Param("recName")String recName, @Param("callId")Integer callId);
 

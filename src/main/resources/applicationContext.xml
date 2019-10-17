@@ -16,6 +16,7 @@
         <context:component-scan base-package="com.monster">
             <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"></context:exclude-filter>
         </context:component-scan>    
+        
     
         <!-- Spring的配置文件，这里主要配置和业务逻辑相关的 -->
         <!-- 数据源，事务控制，xxx -->

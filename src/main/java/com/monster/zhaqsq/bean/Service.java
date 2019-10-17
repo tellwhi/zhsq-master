@@ -1,14 +1,19 @@
 package com.monster.zhaqsq.bean;
 
-public class Services {
+public class Service {
 
 	
 	
-   public Services() {
+   @Override
+	public String toString() {
+		return "Service [serviceId=" + serviceId + ", serviceType=" + serviceType + ", data=" + data + ", eventTime="
+				+ eventTime + "]";
+	}
+public Service() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-   public Services(String serviceId, String serviceType, Data data, String eventTime) {
+   public Service(String serviceId, String serviceType, Data data, String eventTime) {
 		super();
 		this.serviceId = serviceId;
 		this.serviceType = serviceType;
