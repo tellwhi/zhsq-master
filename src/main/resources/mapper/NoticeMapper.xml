@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.monster.zhaqsq.dao.NoticeMapper">
+  <resultMap id="BaseResultMap" type="com.monster.zhaqsq.bean.Notice">
+    <id column="no_id" jdbcType="INTEGER" property="noId" />
+    <result column="com_id" jdbcType="INTEGER" property="comId" />
+    <result column="no_title" jdbcType="VARCHAR" property="noTitle" />
+    <result column="no_content" jdbcType="VARCHAR" property="noContent" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    no_id, com_id, no_title, no_content
+  </sql>
+  <select id="selectByExample" parameterType="com.monster.zhaqsq.bean.NoticeExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from tbl_notice
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tbl_notice
+    where no_id = #{noId,jdbcType=INTEGER}
+  </select>
+  
+  <!-- 根据社区id查询 -->
+  <select id="selectByComid" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tbl_notice
+    where com_id = #{comId,jdbcType=INTEGER}
+  </select>
+  
+  <!-- 查询全部 -->
+  <select id="selectAll" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tbl_notice
+  </select>
+  
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tbl_notice
+    where no_id = #{noId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.monster.zhaqsq.bean.NoticeExample">
+    delete from tbl_notice
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.monster.zhaqsq.bean.Notice">
+    insert into tbl_notice (no_id, com_id, no_title, 
+      no_content)
+    values (#{noId,jdbcType=INTEGER}, #{comId,jdbcType=INTEGER}, #{noTitle,jdbcType=VARCHAR}, 
+      #{noContent,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.monster.zhaqsq.bean.Notice">
+    insert into tbl_notice
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="noId != null">
+        no_id,
+      </if>
+      <if test="comId != null">
+        com_id,
+      </if>
+      <if test="noTitle != null">
+        no_title,
+      </if>
+      <if test="noContent != null">
+        no_content,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="noId != null">
+        #{noId,jdbcType=INTEGER},
+      </if>
+      <if test="comId != null">
+        #{comId,jdbcType=INTEGER},
+      </if>
+      <if test="noTitle != null">
+        #{noTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="noContent != null">
+        #{noContent,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.monster.zhaqsq.bean.NoticeExample" resultType="java.lang.Long">
+    select count(*) from tbl_notice
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update tbl_notice
+    <set>
+      <if test="record.noId != null">
+        no_id = #{record.noId,jdbcType=INTEGER},
+      </if>
+      <if test="record.comId != null">
+        com_id = #{record.comId,jdbcType=INTEGER},
+      </if>
+      <if test="record.noTitle != null">
+        no_title = #{record.noTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="record.noContent != null">
+        no_content = #{record.noContent,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update tbl_notice
+    set no_id = #{record.noId,jdbcType=INTEGER},
+      com_id = #{record.comId,jdbcType=INTEGER},
+      no_title = #{record.noTitle,jdbcType=VARCHAR},
+      no_content = #{record.noContent,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.monster.zhaqsq.bean.Notice">
+    update tbl_notice
+    <set>
+      <if test="comId != null">
+        com_id = #{comId,jdbcType=INTEGER},
+      </if>
+      <if test="noTitle != null">
+        no_title = #{noTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="noContent != null">
+        no_content = #{noContent,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where no_id = #{noId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.monster.zhaqsq.bean.Notice">
+    update tbl_notice
+    set com_id = #{comId,jdbcType=INTEGER},
+      no_title = #{noTitle,jdbcType=VARCHAR},
+      no_content = #{noContent,jdbcType=VARCHAR}
+    where no_id = #{noId,jdbcType=INTEGER}
+  </update>
+</mapper>
