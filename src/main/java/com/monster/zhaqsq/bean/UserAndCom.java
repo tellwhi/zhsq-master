@@ -4,19 +4,18 @@ public class UserAndCom {
 	
 	
 	
-	
-	
-	
     public UserAndCom() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public UserAndCom(Integer uncId, Integer uId, Integer cId, UserBasic userBasic, CommunityBasic communityBasic) {
+	public UserAndCom(Integer uncId, Integer uId, Integer cId, Integer cBan, UserBasic userBasic,
+			CommunityBasic communityBasic) {
 		super();
 		this.uncId = uncId;
 		this.uId = uId;
 		this.cId = cId;
+		this.cBan = cBan;
 		this.userBasic = userBasic;
 		this.communityBasic = communityBasic;
 	}
@@ -27,10 +26,12 @@ public class UserAndCom {
 
     private Integer cId;
 
+    private Integer cBan;
+
     private UserBasic userBasic;
     
     private CommunityBasic communityBasic;
-
+    
     public Integer getUncId() {
         return uncId;
     }
@@ -55,6 +56,14 @@ public class UserAndCom {
         this.cId = cId;
     }
 
+    public Integer getcBan() {
+        return cBan;
+    }
+
+    public void setcBan(Integer cBan) {
+        this.cBan = cBan;
+    }
+
 	public UserBasic getUserBasic() {
 		return userBasic;
 	}
@@ -70,4 +79,8 @@ public class UserAndCom {
 	public void setCommunityBasic(CommunityBasic communityBasic) {
 		this.communityBasic = communityBasic;
 	}
+    
+    
+    
+    
 }

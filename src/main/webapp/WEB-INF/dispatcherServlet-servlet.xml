@@ -47,6 +47,8 @@
             <mvc:exclude-mapping path="/user/register"/>
             <mvc:exclude-mapping path="/request/**"/>
             <mvc:exclude-mapping path="/cookie/**"/>
+            <mvc:exclude-mapping path="/admin/login"/>
+            <mvc:exclude-mapping path="/admin/register"/>
             <!-- 定义在mvc:interceptor下面的表示是对特定的请求才进行拦截的 -->
             <bean class="com.monster.zhaqsq.interceptor.CookieInterceptor"/>
         </mvc:interceptor>

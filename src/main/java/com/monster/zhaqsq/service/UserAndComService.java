@@ -39,4 +39,12 @@ public class UserAndComService {
 		return userAndComMapper.selectWithCId(cId);
 	}
 	
+	public List<UserAndCom> seletByUNB(Integer uId, Integer cBan){
+		return userAndComMapper.selectWithUNB(uId, cBan);
+	}
+	
+	public List<UserAndCom> seletByCNB(Integer cId, Integer cBan){
+		return userAndComMapper.selectWithCNB(cId, cBan);
+	}
+	
 }

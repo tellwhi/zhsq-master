@@ -283,6 +283,66 @@ public class UserAndComExample {
             addCriterion("c_id not between", value1, value2, "cId");
             return (Criteria) this;
         }
+
+        public Criteria andCBanIsNull() {
+            addCriterion("c_ban is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCBanIsNotNull() {
+            addCriterion("c_ban is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCBanEqualTo(Integer value) {
+            addCriterion("c_ban =", value, "cBan");
+            return (Criteria) this;
+        }
+
+        public Criteria andCBanNotEqualTo(Integer value) {
+            addCriterion("c_ban <>", value, "cBan");
+            return (Criteria) this;
+        }
+
+        public Criteria andCBanGreaterThan(Integer value) {
+            addCriterion("c_ban >", value, "cBan");
+            return (Criteria) this;
+        }
+
+        public Criteria andCBanGreaterThanOrEqualTo(Integer value) {
+            addCriterion("c_ban >=", value, "cBan");
+            return (Criteria) this;
+        }
+
+        public Criteria andCBanLessThan(Integer value) {
+            addCriterion("c_ban <", value, "cBan");
+            return (Criteria) this;
+        }
+
+        public Criteria andCBanLessThanOrEqualTo(Integer value) {
+            addCriterion("c_ban <=", value, "cBan");
+            return (Criteria) this;
+        }
+
+        public Criteria andCBanIn(List<Integer> values) {
+            addCriterion("c_ban in", values, "cBan");
+            return (Criteria) this;
+        }
+
+        public Criteria andCBanNotIn(List<Integer> values) {
+            addCriterion("c_ban not in", values, "cBan");
+            return (Criteria) this;
+        }
+
+        public Criteria andCBanBetween(Integer value1, Integer value2) {
+            addCriterion("c_ban between", value1, value2, "cBan");
+            return (Criteria) this;
+        }
+
+        public Criteria andCBanNotBetween(Integer value1, Integer value2) {
+            addCriterion("c_ban not between", value1, value2, "cBan");
+            return (Criteria) this;
+        }
     }
 
     public static class Criteria extends GeneratedCriteria {

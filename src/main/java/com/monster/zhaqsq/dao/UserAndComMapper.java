@@ -48,6 +48,18 @@ public interface UserAndComMapper {
     List<UserAndCom> selectWithCId(Integer cId);
 
 
+    /*
+     *  根据uid查询comid 
+     */
+    List<UserAndCom> selectWithUNB(@Param("uId") Integer uId, @Param("cBan") Integer cBan);
+    
+    /*
+     *  根据comid查询uid
+     */
+    List<UserAndCom> selectWithCNB(@Param("cId") Integer cId, @Param("cBan") Integer cBan);
+
+
+
     int updateByExampleSelective(@Param("record") UserAndCom record, @Param("example") UserAndComExample example);
 
     int updateByExample(@Param("record") UserAndCom record, @Param("example") UserAndComExample example);

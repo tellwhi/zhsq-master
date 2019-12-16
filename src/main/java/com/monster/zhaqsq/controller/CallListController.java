@@ -94,7 +94,6 @@ public class CallListController {
 	@ResponseBody
 	@RequestMapping(value = "/updatetime", method = RequestMethod.PUT)
 	public Msg updateTime(Integer callId, String subTime, String endTime) {
-		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		Date sTime = null, eTime = null;
 		if (subTime != null) {
 			long lt = new Long(subTime);
@@ -105,7 +104,6 @@ public class CallListController {
 			eTime = new Date(lt);
 		}
 		calllistService.changeTime(callId, sTime, eTime);
-		;
 		return Msg.success();
 	}
 

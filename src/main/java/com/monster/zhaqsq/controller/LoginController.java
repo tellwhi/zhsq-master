@@ -12,25 +12,29 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.monster.zhaqsq.bean.CommunityAdmin;
 import com.monster.zhaqsq.bean.Msg;
 import com.monster.zhaqsq.bean.UserBasic;
+import com.monster.zhaqsq.service.CommunityAdminService;
 import com.monster.zhaqsq.service.UserBasicService;
 import com.monster.zhaqsq.utils.cookieUtils;
 
 @Controller
-@RequestMapping("/user")
 public class LoginController {
 
 	@Autowired
 	UserBasicService userbasicService;
 	
+	@Autowired
+	CommunityAdminService communityAdminService;
+	
 	/**
-     * 登录
+     * 用户登录
      * @throws Exception 
      */
-    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    @RequestMapping(value = "/user/login", method = RequestMethod.POST)
     @ResponseBody
-    public Msg login(@RequestParam("userPhonenumber")String userPhonenumber,
+    public Msg userLogin(@RequestParam("userPhonenumber")String userPhonenumber,
                      @RequestParam("userPassword")String userPassword,
                      HttpServletRequest request, HttpServletResponse response) throws Exception{
         List<UserBasic> userList = userbasicService.getall();
@@ -44,11 +48,11 @@ public class LoginController {
     }
 
     /**
-     * 注册
+     * 用户注册
      */
-    @RequestMapping(value = "/register", method = RequestMethod.POST)
+    @RequestMapping(value = "/user/register", method = RequestMethod.POST)
     @ResponseBody
-    public Msg register(@RequestParam("userName")String userName,
+    public Msg userRegister(@RequestParam("userName")String userName,
                         @RequestParam("userPassword")String userPassword,
                         @RequestParam("userPhonenumber")String userPhonenumber){
     	List<UserBasic> userList = userbasicService.getall();
@@ -60,5 +64,43 @@ public class LoginController {
         userbasicService.register(userName, userPassword,userPhonenumber);
         return Msg.success();
     }
+    
+    /**
+     * 管理员登录
+     * @throws Exception 
+     */
+    @RequestMapping(value = "/admin/login", method = RequestMethod.POST)
+    @ResponseBody
+    public Msg adminLogin(@RequestParam("adUsername")String adUsername,
+                     @RequestParam("adPassword")String adPassword,
+                     HttpServletRequest request, HttpServletResponse response) throws Exception{
+        List<CommunityAdmin>  communityAdmins = communityAdminService.getAllComAdmin();
+        for (CommunityAdmin communityAdmin:communityAdmins){
+            if (communityAdmin.getAdUsername().equals(adUsername) && 
+            		communityAdmin.getAdPassword().equals(adPassword)){
+            	cookieUtils.setCookie(communityAdmin.getAdUsername() ,"2" ,response);
+                return Msg.success().add("communityAdmin", communityAdmin);
+            }
+        }
+        return Msg.fail();
+    }
+
+//    /**
+//     * 注册
+//     */
+//    @RequestMapping(value = "/admin/register", method = RequestMethod.POST)
+//    @ResponseBody
+//    public Msg adminRegister(@RequestParam("userName")String userName,
+//                        @RequestParam("userPassword")String userPassword,
+//                        @RequestParam("userPhonenumber")String userPhonenumber){
+//    	List<UserBasic> userList = userbasicService.getall();
+//        for (UserBasic user:userList){
+//            if (user.getUserName().equals(userName) || user.getUserPhonenumber().equals(userPhonenumber)){
+//                return Msg.fail();
+//            }
+//        }
+//        userbasicService.register(userName, userPassword,userPhonenumber);
+//        return Msg.success();
+//    }
 	
 }
